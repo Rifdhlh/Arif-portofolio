@@ -11,6 +11,8 @@ The `main` branch stores the source in `dist`. The `gh-pages` branch serves the 
 ## Project Pages
 
 - `dist/index.html`: profile, skills, and contact details
+- `dist/business-intelligence-projects.html`: business intelligence project collection
+- `dist/dashboard-data-modelling.html`: embedded project presentation and full PDF download
 - `dist/database-projects.html`: Long-Life Shoe Factory
 - `dist/system-analysis-projects.html`: Information System StSport
 - `dist/web-development-projects.html`: Vincraft
