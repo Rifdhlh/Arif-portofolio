@@ -1,0 +1,71 @@
+/* Grouped career timeline; native disclosures also work without JavaScript. */
+.experience-section { border-top: 1px solid var(--line); background: #171c15; }
+.experience-eyebrow { margin-bottom: 14px; }
+.experience-toolbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin: 0 0 26px; }
+.experience-toolbar[hidden], .experience-group[hidden] { display: none !important; }
+.experience-filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.experience-filters button { font: 600 12px var(--font-body); min-height: 42px; padding: 9px 18px; color: var(--ink); background: transparent; border: 1px solid #798371; border-radius: 30px; cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
+.experience-filters button:hover { border-color: var(--accent); color: var(--accent); }
+.experience-filters button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #141713; }
+.experience-count { color: var(--muted); font: 11px/1.6 var(--font-label); margin: 0; }
+.experience-groups { display: grid; gap: 25px; }
+.experience-group { min-width: 0; padding: 30px 34px 6px; border: 1px solid var(--line); background: var(--surface); }
+.experience-group-heading { display: flex; align-items: center; gap: 18px; padding-bottom: 26px; border-bottom: 1px solid var(--line); }
+.experience-monogram { display: grid; place-items: center; width: 54px; height: 54px; flex: 0 0 54px; border: 1px solid #718156; background: #293720; color: var(--accent); font: 700 22px var(--font-heading); letter-spacing: -.05em; }
+.experience-monogram-work { background: #303426; color: #e3ebce; }
+.experience-group-heading h3 { margin: 2px 0 4px; font-size: 24px; line-height: 1.2; letter-spacing: -.03em; }
+.experience-group-label { margin: 0; font: 10px/1.5 var(--font-label); color: var(--accent); text-transform: uppercase; letter-spacing: .08em; }
+.experience-group-location { margin: 0; font-size: 13px; color: var(--muted); }
+.experience-group-total { margin-left: auto; flex: 0 0 auto; font: 11px var(--font-label); color: var(--muted); }
+.experience-timeline { list-style: none; padding: 28px 0 0 27px; margin: 0; }
+.experience-item { position: relative; padding: 0 0 24px 26px; }
+.experience-item::before { content: ""; position: absolute; left: -1px; top: 13px; bottom: -13px; width: 1px; background: #526344; }
+.experience-item:last-child::before { display: none; }
+.experience-item::after { content: ""; position: absolute; left: -5px; top: 8px; width: 9px; height: 9px; box-sizing: border-box; border: 2px solid var(--accent); border-radius: 50%; background: var(--surface); }
+.experience-item:has(.experience-role[open])::after { background: var(--accent); box-shadow: 0 0 0 5px #d5f66b0e; }
+.experience-role { min-width: 0; }
+.experience-role summary { display: flex; gap: 20px; justify-content: space-between; align-items: flex-start; list-style: none; cursor: pointer; padding: 0 0 4px; }
+.experience-role summary::-webkit-details-marker { display: none; }
+.experience-role summary::marker { content: ""; }
+.experience-role summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 7px; }
+.experience-role-main { display: block; min-width: 0; }
+.experience-role-heading { display: flex; align-items: flex-start; gap: 14px; }
+.experience-role-title { display: block; color: var(--ink); font: 600 17px/1.4 var(--font-body); letter-spacing: -.02em; }
+.experience-role summary:hover .experience-role-title { color: var(--accent); }
+.experience-program { display: block; color: #c8d2be; font-size: 13px; line-height: 1.6; margin-top: 5px; }
+.experience-date { display: block; color: var(--muted); font: 11px/1.6 var(--font-label); margin-top: 7px; }
+.experience-present { color: #c6e8a3; background: #293b1e; border: 1px solid #577044; font: 10px/1.4 var(--font-label); padding: 3px 7px; white-space: nowrap; margin-top: 2px; }
+.experience-expand { display: inline-flex; align-items: center; gap: 12px; color: var(--accent); font: 11px/1.5 var(--font-label); flex: 0 0 auto; padding-top: 3px; }
+.experience-plus { display: inline-grid; place-items: center; font-size: 22px; line-height: 1; width: 20px; height: 20px; transition: transform .2s; }
+.experience-hide { display: none; }
+.experience-role[open] .experience-show { display: none; }
+.experience-role[open] .experience-hide { display: inline; }
+.experience-role[open] .experience-plus { transform: rotate(45deg); }
+.experience-role-content { padding: 15px 0 4px; max-width: 790px; }
+.experience-role-content p { color: var(--muted); font-size: 14px; line-height: 1.8; margin: 0 0 12px; }
+.experience-role-content ul { color: var(--muted); font-size: 14px; line-height: 1.8; padding-left: 20px; margin: 0 0 17px; }
+.experience-role-content li+li { margin-top: 5px; }
+.experience-skills { display: flex; flex-wrap: wrap; gap: 7px; padding-top: 4px; }
+.experience-skills span { background: #283021; border: 1px solid #45513a; color: #c5d2b6; font-size: 11px; line-height: 1.5; padding: 4px 9px; }
+@media (max-width: 800px) {
+ .experience-group { padding: 25px 24px 3px; }
+ .experience-role summary { flex-wrap: wrap; gap: 10px; }
+ .experience-role-main { width: 100%; }
+ .experience-expand { padding-top: 0; }
+ .experience-timeline { padding-left: 20px; }
+ .experience-item { padding-left: 22px; }
+}
+@media (max-width: 480px) {
+ .experience-group { padding: 22px 18px 0; }
+ .experience-group-heading { gap: 12px; align-items: flex-start; }
+ .experience-monogram { width: 42px; height: 42px; flex-basis: 42px; font-size: 19px; }
+ .experience-group-heading h3 { font-size: 20px; }
+ .experience-group-total { display: none; }
+ .experience-timeline { padding-left: 7px; }
+ .experience-role-heading { flex-wrap: wrap; gap: 6px 10px; }
+ .experience-role-title { font-size: 15px; }
+ .experience-role-content p, .experience-role-content ul { font-size: 13px; }
+ .experience-role-content { padding-top: 12px; }
+ .experience-count { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) { .experience-plus, .experience-filters button { transition: none; } }
