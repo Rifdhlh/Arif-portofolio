@@ -12,7 +12,6 @@
         title: 'Dashboard & Data Modelling',
         description: 'A Data Modelling course project using Microsoft Excel to explore income patterns in the Adult Census Income Dataset through data preparation, a data model, PivotTables, and dashboards.',
         facts: [['Course', 'Data Modelling'], ['Tools', 'Excel, Power Query, Power Pivot']],
-        contribution: ['Processed raw data in Power Query to prepare it for analysis.', 'Created fact and dimension tables for the analytical model.', 'Built PivotTables using Power Pivot.'],
         href: 'dashboard-data-modelling.html'
       }]
     },
@@ -23,7 +22,6 @@
         title: 'Long-Life Shoe Factory',
         description: 'An OLTP database design for a shoe factory, covering production, orders, procurement, payments, and goods receipt.',
         facts: [['Course', 'Database Fundamental'], ['Group', '8']],
-        contribution: ['Developed the project concept for the Long-Life Shoe Factory case study.', 'Created the entity relationship diagram for the OLTP data model.', 'Implemented SQL queries using aggregate functions, JOINs, subqueries, and other operations.'],
         href: 'database-projects.html'
       }]
     },
@@ -34,7 +32,6 @@
         title: 'Vincraft',
         description: 'A Minecraft community website designed for the Programming for Business course. The portfolio includes an interactive preview with sample content.',
         facts: [['Course', 'Programming for Business'], ['Course Code', 'COSC6050003'], ['Server-side Language', 'PHP'], ['Database', 'MySQL']],
-        contribution: ['Wrote HTML markup directly within PHP files to structure website pages.', 'Implemented the MySQL database connection using PHP.', 'Developed CSS styling and selected simple JavaScript interactions.'],
         note: 'The embedded preview is a temporary demonstration and does not connect to the original PHP application or MySQL database.',
         href: 'web-development-projects.html'
       }]
@@ -46,7 +43,6 @@
         title: 'Information System StSport',
         description: 'Group coursework analyzing and designing a proposed mobile information system for sports facility reservations and sports equipment purchases.',
         facts: [['Course', 'Information System Analysis and Design'], ['Course Code', 'ISYS6893003'], ['Group', '10'], ['Tools', 'Miro, draw.io, Figma']],
-        scope: ['Model customer, partner staff, and administrator workflows.', 'Document system requirements with context and activity diagrams, use cases, and other system models.', 'Develop interface designs for the proposed application.'],
         href: 'system-analysis-projects.html'
       }, {
         title: 'Creativity and Innovation',
@@ -110,7 +106,8 @@
     const article = element('article', '', 'project-quick-project');
     article.append(element('h3', entry.title));
     if (entry.status) article.append(element('span', entry.status, 'project-quick-status'));
-    article.append(element('p', entry.description));
+    const brief = window.portfolioProjectBriefs?.[entry.href];
+    if (!brief) article.append(element('p', entry.description));
     const facts = element('dl');
     for (const [label, value] of entry.facts) {
       const item = element('div');
@@ -118,11 +115,13 @@
       facts.append(item);
     }
     article.append(facts);
-    const points = entry.contribution || entry.scope;
-    if (points) {
-      article.append(element('h4', entry.contribution ? 'My Contribution' : 'Group Project Scope'));
-      const list = element('ul');
-      points.forEach(point => list.append(element('li', point)));
+    if (brief) {
+      const list = element('ol', '', 'quick-brief');
+      brief.forEach(([label, text]) => {
+        const item = element('li');
+        item.append(element('h4', label), element('p', text));
+        list.append(item);
+      });
       article.append(list);
     }
     if (entry.note) article.append(element('p', entry.note));

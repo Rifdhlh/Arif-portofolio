@@ -25,6 +25,10 @@ Every requested website update must be published to GitHub Pages after validatio
 
 Open `dist/index.html` or serve the `dist` folder with a local static server. No build step is required.
 
+## Project Writing Standard
+
+Every existing and future project follows **What → Why → Goal → My Role → How → Challenges → Target Users → Results** in formal English. Aim for 100–180 words per project summary, with supporting evidence available separately. Follow [PROJECT_TEMPLATE.md](PROJECT_TEMPLATE.md) when adding or updating projects; keep detail pages and Quick View consistent, and never invent outcomes or individual responsibilities.
+
 ## Portfolio Interactions
 
 The homepage provides live project search, category filters, quick views, and contact-copy controls. StSport and Long-Life project pages include image galleries with navigation, zoom, and keyboard controls. The Data Modelling page retains its PDF reader and download links. These interactions run in the browser and remain compatible with GitHub Pages.
