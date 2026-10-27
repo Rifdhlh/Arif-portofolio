@@ -1,0 +1,29 @@
+/* A consistent, concise case study format for every published project. */
+.project-brief { padding: 36px 0; }
+.project-brief > .wrap { width: 100%; }
+.project-case .project-brief > .wrap { padding: 0 36px; }
+.project-brief h2 { margin: 12px 0 24px; font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.2; letter-spacing: -.04em; }
+.project-brief-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; }
+.project-brief-grid > li { min-width: 0; padding: 18px 0; border-top: 1px solid var(--line); }
+.project-brief-grid h3, .project-case .project-brief-grid h3 { display: flex; align-items: baseline; gap: 12px; margin: 0 0 8px; font: 600 16px/1.4 var(--font-body); letter-spacing: 0; }
+.project-brief-grid h3 span { color: var(--accent); font: 11px var(--font-label); }
+.project-brief-grid p, .project-case .project-brief-grid p { color: var(--muted); margin: 0; font-size: 14px; line-height: 1.7; max-width: 55ch; }
+.project-brief-grid li:nth-child(4) { border-top-color: var(--accent); }
+.project-brief-grid li:nth-child(4) h3, .project-brief-grid strong { color: var(--ink); }
+.project-evidence { border-top: 1px solid var(--line); margin-top: 24px; }
+.project-evidence > summary { padding: 20px 0; cursor: pointer; color: var(--accent); font-weight: 600; }
+.project-evidence > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.project-brief-inline { padding: 0 0 32px; }
+.project-brief-inline > .wrap { padding: 0; }
+.project-quick-project .quick-brief { display: grid; grid-template-columns: 1fr; list-style: none; padding: 0; margin: 0 0 22px; }
+.project-quick-project .quick-brief li { display: grid; grid-template-columns: 96px minmax(0,1fr); gap: 16px; padding: 12px 0; border-top: 1px solid var(--line); margin: 0; }
+.project-quick-project .quick-brief h4 { color: var(--ink); margin: 0; font-size: 13px; line-height: 1.7; }
+.project-quick-project .quick-brief p { margin: 0; font-size: 13px; line-height: 1.7; }
+@media(max-width:700px) {
+ .project-brief { padding: 26px 0; }
+ .project-case .project-brief > .wrap { padding: 0 22px; }
+ .project-brief-grid { grid-template-columns: 1fr; }
+ .project-brief-grid > li { padding: 16px 0; }
+ .project-brief-inline { padding-top: 0; }
+ .project-quick-project .quick-brief li { grid-template-columns: 1fr; gap: 4px; }
+}
