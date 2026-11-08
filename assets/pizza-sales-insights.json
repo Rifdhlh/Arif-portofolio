@@ -1,0 +1,269 @@
+{
+  "title": "Pizza Restaurant Sales Analysis (2015): transaction-level revenue and order activity",
+  "period": {
+    "start": "2015-01-01",
+    "end": "2015-12-31"
+  },
+  "currency": "USD",
+  "sources": [
+    "orders.csv",
+    "order_details.csv",
+    "pizzas.csv"
+  ],
+  "revenue_definition": "Sum of order_details.quantity multiplied by pizzas.price, joined on pizza_id and assigned to the order date through order_id. This represents recorded sales revenue, not profit.",
+  "order_definition": "Each unique order_id in orders.csv counts once. Heatmap cells aggregate these orders by weekday and order hour across 2015; they are not daily averages.",
+  "total_orders": 21350,
+  "total_order_lines": 48620,
+  "total_pizzas": 49574,
+  "total_revenue": 817860.05,
+  "monthly_revenue": [
+    {
+      "month": 1,
+      "label": "Jan",
+      "revenue": 69793.3
+    },
+    {
+      "month": 2,
+      "label": "Feb",
+      "revenue": 65159.6
+    },
+    {
+      "month": 3,
+      "label": "Mar",
+      "revenue": 70397.1
+    },
+    {
+      "month": 4,
+      "label": "Apr",
+      "revenue": 68736.8
+    },
+    {
+      "month": 5,
+      "label": "May",
+      "revenue": 71402.75
+    },
+    {
+      "month": 6,
+      "label": "Jun",
+      "revenue": 68230.2
+    },
+    {
+      "month": 7,
+      "label": "Jul",
+      "revenue": 72557.9
+    },
+    {
+      "month": 8,
+      "label": "Aug",
+      "revenue": 68278.25
+    },
+    {
+      "month": 9,
+      "label": "Sep",
+      "revenue": 64180.05
+    },
+    {
+      "month": 10,
+      "label": "Oct",
+      "revenue": 64027.6
+    },
+    {
+      "month": 11,
+      "label": "Nov",
+      "revenue": 70395.35
+    },
+    {
+      "month": 12,
+      "label": "Dec",
+      "revenue": 64701.15
+    }
+  ],
+  "hours": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "weekday_hour_orders": [
+    {
+      "weekday": "Monday",
+      "counts": [
+        0,
+        1,
+        226,
+        398,
+        331,
+        182,
+        192,
+        247,
+        317,
+        303,
+        235,
+        174,
+        134,
+        53,
+        1
+      ],
+      "total_orders": 2794
+    },
+    {
+      "weekday": "Tuesday",
+      "counts": [
+        1,
+        0,
+        188,
+        421,
+        371,
+        196,
+        191,
+        295,
+        309,
+        301,
+        274,
+        214,
+        131,
+        81,
+        0
+      ],
+      "total_orders": 2973
+    },
+    {
+      "weekday": "Wednesday",
+      "counts": [
+        0,
+        2,
+        231,
+        420,
+        381,
+        201,
+        210,
+        259,
+        343,
+        335,
+        238,
+        193,
+        139,
+        72,
+        0
+      ],
+      "total_orders": 3024
+    },
+    {
+      "weekday": "Thursday",
+      "counts": [
+        0,
+        3,
+        214,
+        434,
+        438,
+        233,
+        228,
+        289,
+        376,
+        361,
+        270,
+        217,
+        114,
+        60,
+        2
+      ],
+      "total_orders": 3239
+    },
+    {
+      "weekday": "Friday",
+      "counts": [
+        0,
+        0,
+        192,
+        415,
+        413,
+        221,
+        190,
+        258,
+        344,
+        387,
+        340,
+        319,
+        268,
+        180,
+        11
+      ],
+      "total_orders": 3538
+    },
+    {
+      "weekday": "Saturday",
+      "counts": [
+        0,
+        1,
+        85,
+        222,
+        260,
+        225,
+        235,
+        294,
+        325,
+        388,
+        371,
+        328,
+        265,
+        147,
+        12
+      ],
+      "total_orders": 3158
+    },
+    {
+      "weekday": "Sunday",
+      "counts": [
+        0,
+        1,
+        95,
+        210,
+        261,
+        214,
+        222,
+        278,
+        322,
+        324,
+        281,
+        197,
+        147,
+        70,
+        2
+      ],
+      "total_orders": 2624
+    }
+  ],
+  "hour_totals": [
+    1,
+    8,
+    1231,
+    2520,
+    2455,
+    1472,
+    1468,
+    1920,
+    2336,
+    2399,
+    2009,
+    1642,
+    1198,
+    663,
+    28
+  ],
+  "notes": [
+    "All values are aggregate statistics; no customer identifiers or individual transaction records are included.",
+    "The original coursework dashboard uses a different aggregation. These values reproduce the transaction-level view supplied for this case study.",
+    "One year of observations can identify periods to investigate but does not establish recurring seasonality or the causes of changes."
+  ]
+}
