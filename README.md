@@ -14,7 +14,9 @@ Every requested website update must be published to GitHub Pages after validatio
 
 - `dist/index.html`: profile, skills, and contact details
 - `dist/business-intelligence-projects.html`: Excel project collection
-- `dist/dashboard-data-modelling.html`: embedded project presentation and full PDF download
+- `dist/dashboard-data-modelling.html`: Adult Census Income project, embedded presentation, and full PDF download
+- `dist/pizza-sales-analysis.html`: pizza restaurant sales modelling, charts, and documented group attribution
+- `dist/tableau-sales-performance.html`: retail sales preparation, Tableau dashboard, original report, and presentation
 - `dist/database-projects.html`: Long-Life Shoe Factory
 - `dist/figma-projects.html`: Figma coursework collection
 - `dist/system-analysis-projects.html`: Information System Analysis and Design — StSport
@@ -31,8 +33,12 @@ Every existing and future project follows **What → Why → Goal → My Role �
 
 ## Portfolio Interactions
 
-The homepage provides live project search, category filters, quick views, and contact-copy controls. StSport and Long-Life project pages include image galleries with navigation, zoom, and keyboard controls. The Data Modelling page retains its PDF reader and download links. These interactions run in the browser and remain compatible with GitHub Pages.
+The homepage presents five project collections covering six completed case studies, with live project search, category filters, quick views, and contact-copy controls. The responsive ivory and cobalt theme is shared across the portfolio. StSport, Long-Life, Tableau, and pizza project pages include image galleries with navigation, zoom, and keyboard controls. The Data Modelling page retains its PDF reader and download links. These interactions run in the browser and remain compatible with GitHub Pages.
 
 ## Vincraft Preview
 
-Course: COSC6050003 — Programming for Business. The original application uses PHP and MySQL through XAMPP. GitHub Pages hosts a frontend preview with sample content; it does not run PHP or connect to the local MySQL database. Preview interactions stay in memory and reset when refreshed. No credentials or database configuration are included.
+Course: COSC6050003 — Programming for Business. The original application uses PHP and MySQL through XAMPP. GitHub Pages hosts a frontend preview with sample content; it does not run PHP or connect to the local MySQL database. Preview interactions—including posts, comments, likes, reports, and optional video links—stay in memory and reset when refreshed. No credentials or database configuration are included.
+
+## Resource integration
+
+The supplied `resource.zip` was checked file by file against the original repository. Its additional coursework supports the Tableau and pizza case studies, expanded StSport evidence, and the source-backed Vincraft preview. See [RESOURCE_INTEGRATION.md](RESOURCE_INTEGRATION.md) for the integration record. Raw customer records, seeded accounts, and local database configuration are kept outside the public website.

@@ -3,137 +3,205 @@ window.portfolioProjectBriefs = {
   "dashboard-data-modelling.html": [
     [
       "What",
-      "An Excel analysis of the 1994 U.S. Adult Census Income Dataset, supported by a data model and dashboard."
+      "This Excel project analyses the 1994 U.S. Adult Census Income Dataset through a data model and dashboard."
     ],
     [
       "Why",
-      "Raw census records require preparation and a consistent structure before income patterns can be explored."
+      "Raw census records need preparation and a consistent structure before income patterns can be explored."
     ],
     [
       "Goal",
-      "Create an analytical model that supports comparisons between income groups and demographic attributes."
+      "The aim was to create an analytical model for comparing income groups across demographic attributes."
     ],
     [
       "My Role",
-      "Prepared raw data in Power Query, created fact and dimension tables, and built PivotTables using Power Pivot."
+      "I prepared raw data in Power Query, created fact and dimension tables, and built PivotTables using Power Pivot."
     ],
     [
       "How",
-      "Used Excel, Power Query, and Power Pivot to connect data preparation, modelling, and visual analysis."
+      "The workflow combined Excel, Power Query, and Power Pivot for data preparation, modelling, and visual analysis."
     ],
     [
       "Challenges",
-      "Structuring raw records into related tables while maintaining consistent comparisons across income groups."
+      "The model required consistent relationships between tables to support meaningful comparisons across income groups."
     ],
     [
       "Target Users",
-      "Analysts and researchers exploring demographic income patterns; designed as an academic case study."
+      "This academic case study is intended for analysts and researchers exploring demographic income patterns."
     ],
     [
       "Results",
-      "Produced a structured data model, PivotTables, dashboard analysis, and a 12-page project presentation."
+      "The deliverables include a structured data model, PivotTables, dashboard analysis, and a 12-page project presentation."
     ]
   ],
   "database-projects.html": [
     [
       "What",
-      "An operational database design for Long-Life Shoe Factory, covering production, orders, procurement, payments, and goods receipt."
+      "This project proposes an operational database for Long-Life Shoe Factory, covering production, orders, procurement, payments, and goods receipt."
     ],
     [
       "Why",
-      "Growing operational complexity creates a need for integrated inventory, production, transaction, and payment records."
+      "Increasing operational complexity creates a need for integrated inventory, production, transaction, and payment records."
     ],
     [
       "Goal",
-      "Organize business data in a shared model to support accurate records and coordinated operational processes."
+      "The aim was to organize business data in a shared model to support accurate records and coordinated operations."
     ],
     [
       "My Role",
-      "Led project ideation, created the ERD, and implemented SQL queries using aggregate functions, JOINs, subqueries, and other operations."
+      "I led project ideation, created the ERD, and implemented SQL queries using aggregate functions, JOINs, subqueries, and other operations."
     ],
     [
       "How",
-      "Mapped six entities, defined primary and foreign keys, and used MySQL to implement and query their relationships."
+      "The approach mapped six entities, defined primary and foreign keys, and used MySQL to implement and query their relationships."
     ],
     [
       "Challenges",
-      "Keeping production, order, purchase, payment, and goods-receipt relationships consistent within one operational data model."
+      "The design required consistent relationships across production, orders, purchases, payments, and goods receipt within one operational model."
     ],
     [
       "Target Users",
-      "Long-Life’s inventory, production, purchasing, and finance teams, as intended users in the academic case study."
+      "The intended users in this academic case study are Long-Life’s inventory, production, purchasing, and finance teams."
     ],
     [
       "Results",
-      "Delivered an OLTP ERD, data dictionary, and SQL query exercises as part of Group 8 coursework."
+      "Group 8 delivered an OLTP ERD, a data dictionary, and SQL query exercises."
+    ]
+  ],
+  "pizza-sales-analysis.html": [
+    [
+      "What",
+      "This project analyses a pizza restaurant’s 2015 sales through an Excel workbook, data model, and dashboard."
+    ],
+    [
+      "Why",
+      "Restaurant orders, products, ingredients, and customer records need a connected structure before sales patterns can be explored."
+    ],
+    [
+      "Goal",
+      "The aim was to combine these records and support analysis of sales trends, product mix, ordering times, and customer segments."
+    ],
+    [
+      "My Role",
+      "I contributed as a member of Group 10; the supplied materials do not specify my individual responsibilities."
+    ],
+    [
+      "How",
+      "The group used Excel formulas, named ranges, what-if analysis, Power Pivot relationships, cube functions, charts, and slicers."
+    ],
+    [
+      "Challenges",
+      "The workbook required consistent relationships across multiple tables and clear interpretation of results within the selected analysis context."
+    ],
+    [
+      "Target Users",
+      "The intended users are restaurant managers and analysts exploring operational and sales information in an academic case study."
+    ],
+    [
+      "Results",
+      "The group produced a multi-sheet analytical workbook, a connected data model, dashboard views, and a written project report."
     ]
   ],
   "system-analysis-projects.html": [
     [
       "What",
-      "A proposed mobile information system for sports facility reservations and sports equipment purchases."
+      "StSport is a proposed mobile information system for sports facility reservations and sports equipment purchases."
     ],
     [
       "Why",
-      "Reservations require clear availability, payment status, and staff confirmation to avoid conflicting bookings."
+      "Reservations require clear availability information, payment status, and staff confirmation to prevent conflicting bookings."
     ],
     [
       "Goal",
-      "Coordinate booking and purchasing workflows across customers, partner staff, and administrators."
+      "The aim was to coordinate booking and purchasing workflows for customers, partner staff, and administrators."
     ],
     [
       "My Role",
-      "Designed the StSport user interface as part of Group 10’s system analysis and design project."
+      "I designed the StSport user interface as part of Group 10’s system analysis and design project."
     ],
     [
       "How",
-      "Used Miro, draw.io, and Figma to support workflow modelling, system diagrams, and interface design."
+      "The project used Miro, draw.io, and Figma for workflow modelling, system diagrams, and interface design."
     ],
     [
       "Challenges",
-      "Aligning facility availability, booking status, payment, and partner confirmation within a consistent reservation workflow."
+      "The design required facility availability, booking status, payments, and partner confirmations to align within a consistent reservation workflow."
     ],
     [
       "Target Users",
-      "Sports facility customers, partner staff managing reservations, and administrators monitoring bookings and equipment sales."
+      "The intended users are sports facility customers, partner staff managing reservations, and administrators monitoring bookings and equipment sales."
     ],
     [
       "Results",
       "Group 10 produced interface designs, system models, and documentation for a proposed three-tier application architecture."
     ]
   ],
-  "web-development-projects.html": [
+  "tableau-sales-performance.html": [
     [
       "What",
-      "A Minecraft community website for discovering, sharing, and discussing user-created content."
+      "This project presents a Tableau dashboard for analysing retail sales performance from January to June 2025."
     ],
     [
       "Why",
-      "Community content needs searchable categories, publishing tools, and organized feedback and moderation workflows."
+      "Raw sales records contained missing values, errors, duplicates, and inconsistent data types that limited reliable analysis."
     ],
     [
       "Goal",
-      "Enable visitors to discover content, members to contribute, and administrators to manage community activity."
+      "The aim was to prepare a consistent dataset and present product, category, and monthly sales patterns clearly."
     ],
     [
       "My Role",
-      "Developed HTML and CSS, implemented the PHP-to-MySQL connection, and contributed selected JavaScript interface logic."
+      "I documented the data cleaning in Power Query and developed the Tableau visualisations and interactive dashboard."
     ],
     [
       "How",
-      "Combined HTML, CSS, and JavaScript with PHP and MySQL, using XAMPP for local development."
+      "The workflow transformed 30,100 raw rows into 11,212 cleaned records, then used charts and filters to explore sales performance."
     ],
     [
       "Challenges",
-      "Connecting page interfaces to stored posts and user activity while supporting distinct visitor, member, and administrator workflows."
+      "The analysis required consistent date and numeric fields, careful anomaly handling, and clear comparisons across products and periods."
     ],
     [
       "Target Users",
-      "Minecraft players, community content creators, and administrators responsible for users, categories, posts, and reports."
+      "The intended users are sales management, marketing teams, and analysts reviewing retail performance in an academic case study."
     ],
     [
       "Results",
-      "Delivered a PHP/MySQL coursework project; this portfolio also provides an interactive frontend demonstration with sample content."
+      "The deliverables include a cleaned workbook, Tableau workbooks, an interactive dashboard, a written report, and a video presentation."
+    ]
+  ],
+  "web-development-projects.html": [
+    [
+      "What",
+      "Vincraft is a Minecraft community website for discovering, sharing, and discussing user-created content."
+    ],
+    [
+      "Why",
+      "Community content requires searchable categories, publishing tools, and organized feedback and moderation workflows."
+    ],
+    [
+      "Goal",
+      "The aim was to help visitors discover content, enable members to contribute, and support administrators in managing community activity."
+    ],
+    [
+      "My Role",
+      "I developed the HTML and CSS, implemented the PHP-to-MySQL connection, and contributed selected JavaScript interface logic."
+    ],
+    [
+      "How",
+      "The project combined HTML, CSS, and JavaScript with PHP and MySQL, using XAMPP for local development."
+    ],
+    [
+      "Challenges",
+      "The implementation required connecting interfaces to stored posts and user activity while supporting separate visitor, member, and administrator workflows."
+    ],
+    [
+      "Target Users",
+      "The intended users are Minecraft players, community content creators, and administrators managing users, categories, posts, and reports."
+    ],
+    [
+      "Results",
+      "The deliverable is a PHP/MySQL coursework project, accompanied here by an interactive frontend demonstration with sample content."
     ]
   ]
 };
