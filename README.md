@@ -33,7 +33,7 @@ Every existing and future project follows **What → Why → Goal → My Role �
 
 ## Portfolio Interactions
 
-The homepage presents five project collections covering six completed case studies, with live project search, category filters, quick views, and contact-copy controls. The responsive ivory and cobalt theme is shared across the portfolio. StSport, Long-Life, Tableau, and pizza project pages include image galleries with navigation, zoom, and keyboard controls. The Data Modelling page retains its PDF reader and download links. These interactions run in the browser and remain compatible with GitHub Pages.
+The homepage highlights six course projects directly, with live project search, discipline filters, quick views, and tool icons at the bottom-right of every card. Each card opens its case study. The existing dark palette, lime accents, hero, About section, experience, technology highlights, contact details, and original CV are retained. StSport, Long-Life, Tableau, and pizza project pages include image galleries with navigation, zoom, and keyboard controls. The Data Modelling page retains its PDF reader and download links. These interactions run in the browser and remain compatible with GitHub Pages.
 
 ## Vincraft Preview
 
