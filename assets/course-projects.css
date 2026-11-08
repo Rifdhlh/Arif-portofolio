@@ -1,0 +1,30 @@
+/* Direct course projects, within the established portfolio design. */
+.course-project-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.course-projects .course-project{display:flex;flex-direction:column;min-width:0;overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:0;box-shadow:none}
+.course-projects .course-project>.card{display:flex;flex-direction:column;flex:1;padding:0;border:0;border-radius:0;background:transparent;text-decoration:none;box-shadow:none;min-width:0}
+.course-projects .course-project>.card:hover{background:#242b20;box-shadow:none}
+.course-project-image{position:relative;width:100%;aspect-ratio:1.78;background:#eef0eb;overflow:hidden;border-bottom:1px solid var(--line);display:grid;place-items:center}
+.course-project-image>img{display:block;width:100%;height:100%;object-fit:contain;max-height:100%;background:#fff;transition:transform .3s ease}
+.course-image-pizza>img{padding:16px}.course-image-database>img{padding:18px}.course-image-figma{background:#0e1043}.course-image-figma>img{object-fit:contain;background:#0e1043;padding:14px}.course-image-web>img{object-fit:cover;background:#141713;filter:brightness(.7)}
+.course-vincraft-wordmark{position:absolute;font:bold 34px/1 Arial,sans-serif;letter-spacing:4px;color:#fff}
+.course-project>.card:hover .course-project-image>img{transform:scale(1.015)}
+.course-project-copy{width:100%;padding:28px 30px 18px;display:flex;flex-direction:column;flex:1}
+.course-project-copy .course-name{font-size:10px;line-height:1.7;letter-spacing:.1em;margin:0 0 20px;color:var(--muted);font-family:var(--font-label)}
+.course-project-copy .course-name:before{flex:0 0 24px}
+.course-project-copy h3{font-size:29px;font-weight:700;line-height:1.2;letter-spacing:-.035em;margin:0 0 17px;color:var(--ink)}
+.course-project-copy>p:not(.course-name){font-size:15px;line-height:1.85;color:var(--muted);margin:0 0 22px;max-width:none}
+.course-project-action{display:flex;align-items:center;gap:14px;color:var(--accent);font-size:13px;font-weight:600;margin-top:auto;padding-top:3px}
+.course-project-action>span{font-size:18px}
+.course-card-footer{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 30px;padding:15px 0 22px;border-top:1px solid var(--line);min-width:0}
+.course-card-footer .project-quick-view{margin:0;padding:9px 12px;font-size:12px;min-height:40px;flex:0 0 auto;align-self:center;border:1px solid #798371;background:transparent;white-space:nowrap}
+.course-tools{margin-left:auto;display:flex;justify-content:flex-end;align-items:center;gap:6px;min-width:0;flex-wrap:nowrap}
+.course-tool{width:35px;height:35px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;background:#f2f3ed;border:1px solid #f2f3ed;border-radius:5px;padding:5px}
+.course-tool>img{display:block;width:25px;height:25px;object-fit:contain}.course-tool-wide{width:54px;padding:3px}.course-tool-wide>img{width:47px;height:28px}
+.course-tool .excel-logo{position:relative;display:block;width:26px;height:26px;overflow:hidden}.course-tool .excel-logo>img{position:absolute;max-width:none;width:56px;height:37.33px;left:50%;top:50%;transform:translate(-50%,-50%)}
+.course-pending-note{margin:27px 0 0;color:var(--muted);font-size:12px;line-height:1.8}.course-pending-note a{color:var(--accent);text-underline-offset:4px}
+@media(max-width:1050px){.course-project-copy{padding:25px 25px 18px}.course-card-footer{margin-inline:25px;gap:12px}.course-project-copy h3{font-size:27px}.course-tool{width:30px;height:30px;padding:4px}.course-tool>img{width:23px;height:23px}.course-tool-wide{width:45px}.course-tool-wide>img{width:39px;height:25px}.course-tools{gap:4px}.course-card-footer .project-quick-view{font-size:11px;padding:8px 10px}}
+@media(max-width:700px){.course-project-grid{grid-template-columns:1fr;gap:24px}.course-project-copy{padding:25px 24px 18px}.course-project-copy h3{font-size:29px}.course-project-copy .course-name{font-size:10px;margin-bottom:17px}.course-project-copy>p:not(.course-name){font-size:14px;line-height:1.85}.course-card-footer{margin-inline:24px;padding:15px 0 22px}.course-tools{gap:5px}.course-tool{width:32px;height:32px}.course-tool-wide{width:48px}.course-tool-wide>img{width:42px}.course-pending-note{font-size:11px}.course-vincraft-wordmark{font-size:30px}}
+@media(max-width:380px){.course-project-copy{padding:23px 19px 16px}.course-card-footer{margin-inline:19px;gap:8px}.course-project-copy h3{font-size:26px}.course-tool{width:27px;height:27px;padding:3px}.course-tool>img{width:21px;height:21px}.course-tool-wide{width:40px}.course-tool-wide>img{width:35px;height:23px}.course-tool .excel-logo{width:22px;height:22px}.course-card-footer .project-quick-view{font-size:10px;padding:8px}.course-tools{gap:4px}}
+@media(prefers-reduced-motion:reduce){.course-project-image>img{transition:none}}
+/* Keep multi-tool groups together when a card footer becomes narrow. */
+.course-card-footer{flex-wrap:wrap;row-gap:12px}.course-tools{flex:0 0 auto;max-width:100%}

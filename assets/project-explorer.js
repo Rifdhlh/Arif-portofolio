@@ -5,69 +5,162 @@
   if (!explorer) return;
 
   const projects = {
-    excel: {
-      title: 'Excel & Data Modelling',
-      keywords: 'Data Modelling Dashboard Microsoft Excel Power Query Power Pivot PivotTable Adult Census Income Pizza Restaurant Sales 2015 ISYS6895003 BE11',
-      entries: [{
-        title: 'Dashboard & Data Modelling',
-        description: 'A Data Modelling course project using Microsoft Excel to explore income patterns in the Adult Census Income Dataset through data preparation, a data model, PivotTables, and dashboards.',
-        facts: [['Course', 'Data Modelling'], ['Tools', 'Excel, Power Query, Power Pivot']],
-        href: 'dashboard-data-modelling.html'
-      }, {
-        title: 'Pizza Restaurant Sales Analysis',
-        description: 'A group project using an Excel data model and dashboard views to analyse a pizza restaurant’s 2015 sales.',
-        facts: [['Course', 'Data Modelling'], ['Course Code', 'ISYS6895003'], ['Class / Group', 'Lab BE11 · Group 10'], ['Tools', 'Excel, Power Pivot']],
-        href: 'pizza-sales-analysis.html'
-      }]
-    },
-    visualization: {
-      title: 'Retail Sales Performance',
-      keywords: 'Tableau Data Visualization Visualisation Retail Sales Performance Power Query Excel Dashboard 2025',
-      entries: [{
-        title: 'Retail Sales Performance',
-        description: 'An individual coursework project combining data cleaning in Power Query with sales analysis and an interactive Tableau dashboard.',
-        facts: [['Course', 'Data Visualization'], ['Tools', 'Power Query, Excel, Tableau'], ['Analysis Period', 'January–June 2025']],
-        href: 'tableau-sales-performance.html'
-      }]
-    },
-    database: {
-      title: 'Database Project',
-      keywords: 'Long-Life Shoe Factory Database Fundamental ERD OLTP SQL MySQL aggregate JOIN joins subquery subqueries MongoDB',
-      entries: [{
-        title: 'Long-Life Shoe Factory',
-        description: 'An OLTP database design for a shoe factory, covering production, orders, procurement, payments, and goods receipt.',
-        facts: [['Course', 'Database Fundamental'], ['Group', '8']],
-        href: 'database-projects.html'
-      }]
-    },
-    web: {
-      title: 'Web Development',
-      keywords: 'Vincraft Programming for Business COSC6050003 PHP MySQL HTML CSS JavaScript JS XAMPP Minecraft',
-      entries: [{
-        title: 'Vincraft',
-        description: 'A Minecraft community website designed for the Programming for Business course. The portfolio includes an interactive preview with sample content.',
-        facts: [['Course', 'Programming for Business'], ['Course Code', 'COSC6050003'], ['Server-side Language', 'PHP'], ['Database', 'MySQL']],
-        note: 'The embedded preview is a temporary demonstration and does not connect to the original PHP application or MySQL database.',
-        href: 'web-development-projects.html'
-      }]
-    },
-    figma: {
-      title: 'Systems Analysis & Design',
-      keywords: 'StSport Information System Analysis and Design ISYS6893003 Group 10 Creativity and Innovation Figma Miro draw.io diagrams booking sports',
-      entries: [{
-        title: 'StSport Information System',
-        description: 'Group coursework analysing and designing a proposed mobile information system for sports facility reservations and sports equipment purchases.',
-        facts: [['Course', 'Information System Analysis and Design'], ['Course Code', 'ISYS6893003'], ['Group', '10'], ['Tools', 'Miro, draw.io, Figma']],
-        href: 'system-analysis-projects.html'
-      }, {
-        title: 'Creativity and Innovation',
-        description: 'Project details will be added when the supporting materials are available.',
-        status: 'Supporting materials pending',
-        facts: [['Course', 'Creativity and Innovation']],
-        href: 'creativity-and-innovation.html'
-      }]
-    }
-  };
+  "census": {
+    "title": "Dashboard & Data Modelling",
+    "keywords": "Adult Census Income 1994 Data Modelling Dashboard Microsoft Excel Power Query Power Pivot PivotTable LC11",
+    "entries": [
+      {
+        "title": "Dashboard & Data Modelling",
+        "description": "Preparing the Adult Census Income Dataset, building fact and dimension tables, and developing PivotTables and dashboards in Excel.",
+        "facts": [
+          [
+            "Course",
+            "Data Modelling"
+          ],
+          [
+            "Tools",
+            "Excel, Power Query, Power Pivot"
+          ]
+        ],
+        "href": "dashboard-data-modelling.html"
+      }
+    ]
+  },
+  "pizza": {
+    "title": "Pizza Restaurant Sales Analysis",
+    "keywords": "Pizza Restaurant Sales Analysis 2015 Data Modelling ISYS6895003 BE11 Group 10 Excel Power Pivot formulas cube slicers",
+    "entries": [
+      {
+        "title": "Pizza Restaurant Sales Analysis",
+        "description": "Connecting restaurant records in Excel to explore 2015 sales trends, product mix, ordering patterns, and aggregate customer segments.",
+        "facts": [
+          [
+            "Course",
+            "Data Modelling"
+          ],
+          [
+            "Course Code",
+            "ISYS6895003"
+          ],
+          [
+            "Class / Group",
+            "Lab BE11 · Group 10"
+          ],
+          [
+            "Tools",
+            "Excel, Power Pivot"
+          ]
+        ],
+        "href": "pizza-sales-analysis.html"
+      }
+    ]
+  },
+  "visualization": {
+    "title": "Retail Sales Performance",
+    "keywords": "Tableau Data Visualization Visualisation Retail Sales Performance Power Query Microsoft Excel Dashboard 2025 LB11",
+    "entries": [
+      {
+        "title": "Retail Sales Performance",
+        "description": "Cleaning retail sales records with Power Query and presenting product, category, and monthly performance in an interactive Tableau dashboard.",
+        "facts": [
+          [
+            "Course",
+            "Data Visualization"
+          ],
+          [
+            "Tools",
+            "Power Query, Excel, Tableau"
+          ],
+          [
+            "Analysis Period",
+            "January–June 2025"
+          ]
+        ],
+        "href": "tableau-sales-performance.html"
+      }
+    ]
+  },
+  "database": {
+    "title": "Long-Life Shoe Factory",
+    "keywords": "Long-Life Shoe Factory Database Fundamental Group 8 ERD OLTP SQL MySQL aggregate JOIN subquery",
+    "entries": [
+      {
+        "title": "Long-Life Shoe Factory",
+        "description": "An academic database design covering production, orders, procurement, payments, and goods receipt through an ERD and SQL queries.",
+        "facts": [
+          [
+            "Course",
+            "Database Fundamental"
+          ],
+          [
+            "Group",
+            "8"
+          ],
+          [
+            "Tools",
+            "MySQL, SQL"
+          ]
+        ],
+        "href": "database-projects.html"
+      }
+    ]
+  },
+  "figma": {
+    "title": "StSport Information System",
+    "keywords": "StSport Information System Analysis and Design ISYS6893003 Group 10 Figma Miro draw.io sports booking reservation UI design",
+    "entries": [
+      {
+        "title": "StSport Information System",
+        "description": "Designing a proposed sports reservation and equipment purchasing system through interface mock-ups, process diagrams, and system models.",
+        "facts": [
+          [
+            "Course",
+            "Information System Analysis and Design"
+          ],
+          [
+            "Course Code",
+            "ISYS6893003"
+          ],
+          [
+            "Group",
+            "10"
+          ],
+          [
+            "Tools",
+            "Miro, draw.io, Figma"
+          ]
+        ],
+        "href": "system-analysis-projects.html"
+      }
+    ]
+  },
+  "web": {
+    "title": "Vincraft Community Website",
+    "keywords": "Vincraft Programming for Business COSC6050003 PHP MySQL HTML CSS JavaScript JS XAMPP Minecraft",
+    "entries": [
+      {
+        "title": "Vincraft Community Website",
+        "description": "A Minecraft community website developed with HTML, CSS, JavaScript, PHP, and MySQL, with an interactive frontend demonstration.",
+        "facts": [
+          [
+            "Course",
+            "Programming for Business"
+          ],
+          [
+            "Course Code",
+            "COSC6050003"
+          ],
+          [
+            "Tools",
+            "HTML, CSS, JavaScript, PHP, MySQL"
+          ]
+        ],
+        "href": "web-development-projects.html",
+        "note": "The interactive preview uses sample content. Changes last only for the current session and do not connect to the original PHP application or MySQL database."
+      }
+    ]
+  }
+};
 
   const controls = explorer.querySelector('[data-explorer-controls]');
   const search = explorer.querySelector('[data-project-search]');
@@ -85,7 +178,7 @@
   let scrollLocked = false;
 
   const normalize = value => value.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-  const searchText = new Map(cards.map(card => [card, normalize(`${card.textContent} ${projects[card.dataset.projectCategory].keywords}`)]));
+  const searchText = new Map(cards.map(card => [card, normalize(`${card.textContent} ${projects[card.dataset.projectKey || card.dataset.projectCategory].keywords}`)]));
 
   function updateResults() {
     const terms = normalize(search.value.trim()).split(/\s+/).filter(Boolean);
@@ -96,7 +189,7 @@
       card.hidden = !(matchesCategory && matchesSearch);
       if (!card.hidden) matches += 1;
     }
-    count.textContent = `${matches} project ${matches === 1 ? 'collection' : 'collections'} found.`;
+    count.textContent = `${matches} ${matches === 1 ? 'project' : 'projects'} found.`;
     empty.hidden = matches !== 0;
     for (const button of filters) {
       button.setAttribute('aria-pressed', String(button.dataset.projectFilter === category));
