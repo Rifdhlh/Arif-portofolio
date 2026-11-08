@@ -6,13 +6,28 @@
 
   const projects = {
     excel: {
-      title: 'Excel Project',
-      keywords: 'Data Modelling Dashboard Microsoft Excel Power Query Power Pivot PivotTable Adult Census Income',
+      title: 'Excel & Data Modelling',
+      keywords: 'Data Modelling Dashboard Microsoft Excel Power Query Power Pivot PivotTable Adult Census Income Pizza Restaurant Sales 2015 ISYS6895003 BE11',
       entries: [{
         title: 'Dashboard & Data Modelling',
         description: 'A Data Modelling course project using Microsoft Excel to explore income patterns in the Adult Census Income Dataset through data preparation, a data model, PivotTables, and dashboards.',
         facts: [['Course', 'Data Modelling'], ['Tools', 'Excel, Power Query, Power Pivot']],
         href: 'dashboard-data-modelling.html'
+      }, {
+        title: 'Pizza Restaurant Sales Analysis',
+        description: 'A group project using an Excel data model and dashboard views to analyse a pizza restaurant’s 2015 sales.',
+        facts: [['Course', 'Data Modelling'], ['Course Code', 'ISYS6895003'], ['Class / Group', 'Lab BE11 · Group 10'], ['Tools', 'Excel, Power Pivot']],
+        href: 'pizza-sales-analysis.html'
+      }]
+    },
+    visualization: {
+      title: 'Retail Sales Performance',
+      keywords: 'Tableau Data Visualization Visualisation Retail Sales Performance Power Query Excel Dashboard 2025',
+      entries: [{
+        title: 'Retail Sales Performance',
+        description: 'An individual coursework project combining data cleaning in Power Query with sales analysis and an interactive Tableau dashboard.',
+        facts: [['Course', 'Data Visualization'], ['Tools', 'Power Query, Excel, Tableau'], ['Analysis Period', 'January–June 2025']],
+        href: 'tableau-sales-performance.html'
       }]
     },
     database: {
@@ -37,11 +52,11 @@
       }]
     },
     figma: {
-      title: 'Figma Project',
+      title: 'Systems Analysis & Design',
       keywords: 'StSport Information System Analysis and Design ISYS6893003 Group 10 Creativity and Innovation Figma Miro draw.io diagrams booking sports',
       entries: [{
-        title: 'Information System StSport',
-        description: 'Group coursework analyzing and designing a proposed mobile information system for sports facility reservations and sports equipment purchases.',
+        title: 'StSport Information System',
+        description: 'Group coursework analysing and designing a proposed mobile information system for sports facility reservations and sports equipment purchases.',
         facts: [['Course', 'Information System Analysis and Design'], ['Course Code', 'ISYS6893003'], ['Group', '10'], ['Tools', 'Miro, draw.io, Figma']],
         href: 'system-analysis-projects.html'
       }, {

@@ -73,7 +73,7 @@
           organizationCount++;
         }
       });
-      status.textContent = `${count} ${count === 1 ? 'role' : 'roles'} across ${organizationCount} ${organizationCount === 1 ? 'organization' : 'organizations'}.`;
+      status.textContent = `${count} ${count === 1 ? 'role' : 'roles'} across ${organizationCount} ${organizationCount === 1 ? 'organisation' : 'organisations'}.`;
     }));
     experience.querySelector('[data-experience-controls]').hidden = false;
   }
