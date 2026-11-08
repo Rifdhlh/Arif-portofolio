@@ -15,7 +15,7 @@ Every requested website update must be published to GitHub Pages after validatio
 - `dist/index.html`: profile, skills, and contact details
 - `dist/business-intelligence-projects.html`: Excel project collection
 - `dist/dashboard-data-modelling.html`: Adult Census Income project, embedded presentation, and full PDF download
-- `dist/pizza-sales-analysis.html`: pizza restaurant sales modelling, charts, and documented group attribution
+- `dist/pizza-sales-analysis.html`: pizza restaurant sales modelling, monthly revenue and order-timing storytelling, charts, and documented group attribution
 - `dist/tableau-sales-performance.html`: retail sales preparation, Tableau dashboard, original report, and presentation
 - `dist/database-projects.html`: Long-Life Shoe Factory
 - `dist/figma-projects.html`: Figma coursework collection

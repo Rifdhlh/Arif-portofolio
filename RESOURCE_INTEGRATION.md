@@ -24,3 +24,7 @@ The complete private file-level classification is retained alongside the extract
 ## Tool icon attribution
 
 The PHP mark in `dist/assets/php.svg` comes from the Simple Icons project and is provided under CC0. Existing uploaded tool logos are retained for Excel, MySQL, Tableau, Miro, draw.io, Figma, HTML, CSS, and JavaScript. Power Query and Power Pivot are identified with Excel’s icon and an accessible label.
+
+## Pizza transaction-level interpretation
+
+The pizza case study also explains monthly revenue and weekday/hour order activity using aggregate-only data verified against `orders.csv`, `order_details.csv`, and `pizzas.csv`. Revenue is calculated once per order line as quantity multiplied by pizza price; each order is counted once in the heatmap. The accessible chart and heatmap reproduce the supplied transaction-level view. The original coursework sales image remains clearly labelled as a different calculation context. Managerial suggestions are presented as recommendations to investigate, with no claim that they were implemented or caused business improvements.
