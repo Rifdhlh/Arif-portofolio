@@ -34,6 +34,40 @@ window.portfolioProjectBriefs = {
       "The deliverables include a structured data model, PivotTables, dashboard analysis, and a 12-page project presentation."
     ]
   ],
+  "data-information-management.html": [
+    [
+      "What",
+      "This academic case study proposes an integrated Oracle database for Solaria’s multi-outlet restaurant operations."
+    ],
+    [
+      "Why",
+      "The scenario addresses fragmented sales, stock, purchasing, and customer records across restaurant operations."
+    ],
+    [
+      "Goal",
+      "The aim was to connect restaurant processes and support consistent transaction, inventory, and management records."
+    ],
+    [
+      "My Role",
+      "I designed the conceptual, logical, and physical database models, mapping the ordering journey and receipt details to ERD entities."
+    ],
+    [
+      "How",
+      "The group documented entity relationships, relational schemas, a data dictionary, and Oracle SQL and PL/SQL examples."
+    ],
+    [
+      "Challenges",
+      "The design required consistent relationships across transaction lines, payments, recipes, inventory, and different fulfilment types."
+    ],
+    [
+      "Target Users",
+      "The intended users in this academic scenario are outlet staff, warehouse and purchasing teams, and management."
+    ],
+    [
+      "Results",
+      "The group produced an ERD, relational mappings, a data dictionary, Oracle schema definitions, and PL/SQL examples."
+    ]
+  ],
   "database-projects.html": [
     [
       "What",

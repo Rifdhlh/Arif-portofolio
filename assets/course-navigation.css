@@ -1,0 +1,144 @@
+.course-back-button {
+  view-transition-name: course-back;
+}
+
+/* Both documents opt in; links and history navigation remain native. */
+@view-transition {
+  navigation: auto;
+}
+
+body > header {
+  view-transition-name: course-header;
+}
+
+.reading-progress {
+  view-transition-name: course-progress;
+}
+
+/* Fade the viewport content without morphing differently sized main elements. */
+::view-transition-group(root),
+::view-transition-group(course-header),
+::view-transition-group(course-back),
+::view-transition-group(course-progress) {
+  animation: none;
+}
+
+::view-transition-old(root) {
+  animation: course-page-out 140ms ease-out both;
+}
+
+::view-transition-new(root) {
+  animation: course-page-in 180ms cubic-bezier(.2, .7, .3, 1) both;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  mix-blend-mode: normal;
+}
+
+::view-transition-group(course-header),
+::view-transition-group(course-back),
+::view-transition-group(course-progress) {
+  z-index: 1;
+}
+
+/* The destination navigation stays still while the content dissolves. */
+::view-transition-old(course-header),
+::view-transition-old(course-back),
+::view-transition-old(course-progress) {
+  display: none;
+}
+
+::view-transition-new(course-header),
+::view-transition-new(course-back),
+::view-transition-new(course-progress) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+@keyframes course-page-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes course-page-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* A subtle visible-content fallback for browsers without document transitions. */
+@media (prefers-reduced-motion: no-preference) {
+  html[data-course-navigation="fallback"] main#utama {
+    animation: course-content-enter 180ms ease-out;
+  }
+}
+
+@keyframes course-content-enter {
+  from { opacity: .97; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+html[data-motion="off"] main#utama,
+html[data-motion="off"]::view-transition-group(*),
+html[data-motion="off"]::view-transition-old(*),
+html[data-motion="off"]::view-transition-new(*) {
+  animation: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
+.course-back-button {
+  position: fixed;
+  top: var(--header-offset, 108px);
+  left: 16px;
+  z-index: 21;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 72px;
+  min-height: 40px;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  border: 1px solid var(--line, #373d35);
+  border-radius: 6px;
+  background: var(--surface, #1d211c);
+  color: var(--ink, #f2f3ed);
+  box-shadow: 0 3px 14px #0003;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.course-back-button:hover {
+  border-color: var(--accent, #d5f66b);
+  color: var(--accent, #d5f66b);
+}
+
+.course-back-button:focus-visible {
+  outline: 3px solid var(--accent, #d5f66b);
+  outline-offset: 4px;
+}
+
+.course-back-button > span[aria-hidden] {
+  font-size: 17px;
+  line-height: 1;
+}
+
+@media (max-width: 700px) {
+  .course-back-button {
+    top: var(--header-offset, 140px);
+  }
+}

@@ -159,6 +159,31 @@
         "note": "The interactive preview uses sample content. Changes last only for the current session and do not connect to the original PHP application or MySQL database."
       }
     ]
+  },
+  "dim": {
+    "title": "Solaria Integrated Restaurant Operations Database",
+    "keywords": "Data and Information Management DIM Solaria Oracle SQL PL SQL PL/SQL ERD conceptual logical physical database design receipt restaurant POS transaction inventory warehouse group 3",
+    "entries": [
+      {
+        "title": "Solaria Integrated Restaurant Operations Database",
+        "description": "An academic group database design using Solaria as a restaurant case study, from conceptual and logical models to an Oracle physical design.",
+        "facts": [
+          [
+            "Course",
+            "Data and Information Management"
+          ],
+          [
+            "Group",
+            "3"
+          ],
+          [
+            "Tools",
+            "Oracle SQL, PL/SQL"
+          ]
+        ],
+        "href": "data-information-management.html"
+      }
+    ]
   }
 };
 
