@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An academic Oracle database design for Solaria restaurant operations by Group 3, with Muhammad Arif Fadhilah’s conceptual, logical, and physical database design contribution.">
+  <meta name="theme-color" content="#141713">
+  <title>Solaria Integrated Restaurant Operations Database — Muhammad Arif Fadhilah</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/project-gallery.css">
+  <link rel="stylesheet" href="assets/portfolio-theme.css">
+  <link rel="stylesheet" href="assets/project-brief.css">
+  <link rel="stylesheet" href="assets/portfolio-interactions.css">
+  <link rel="stylesheet" href="assets/course-navigation.css">
+  <link rel="stylesheet" href="assets/course-description.css">
+  <link rel="stylesheet" href="assets/data-information-management.css">
+  <script src="assets/project-gallery.js" defer></script>
+  <script src="assets/portfolio-interactions.js" defer></script>
+  <script src="assets/course-navigation.js" defer></script>
+</head>
+<body class="dim-page" id="atas">
+  <a class="course-back-button" data-course-back href="index.html#keahlian" aria-label="Back to course projects"><span aria-hidden="true">←</span><span>Back</span></a>
+  <a class="skip" href="#utama">Skip to content</a>
+  <header>
+    <nav class="wrap" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Arif, home">Arif Fadhilah</a>
+      <div class="navlinks"><a href="index.html#tentang">About</a><a href="index.html#experience">Experience</a><a href="index.html#keahlian">Course Projects</a><a class="nav-contact" href="index.html#contact">Let's Talk</a></div>
+    </nav>
+  </header>
+  <main id="utama">
+    <section class="projects-section" aria-labelledby="dim-title">
+      <div class="wrap">
+        <a class="back-to-skills" href="index.html#keahlian">Back to Course Projects</a>
+        <p class="eyebrow">Data and Information Management · Group 3</p>
+        <h1 class="dim-page-title" id="dim-title">Solaria Integrated Restaurant Operations Database</h1>
+        <p class="dim-page-intro">Connecting restaurant ordering, payments, inventory, and delivery through a structured relational database design.</p>
+
+        <section class="course-description" aria-labelledby="course-description-title">
+          <p class="eyebrow">Course Description</p>
+          <h2 id="course-description-title">Data and Information Management</h2>
+          <p>This course introduces the core concepts of data and information management, including identifying organisational information requirements and designing a relational database using a structured database design methodology. It develops students’ understanding of database design terminology within the Database System Development Life Cycle, alongside concepts in new database technologies that support artificial intelligence workflows.</p>
+        </section>
+
+        <article class="project-case" aria-labelledby="dim-case-title">
+          <div class="project-heading">
+            <div><p class="eyebrow">Academic Database Design</p><h2 id="dim-case-title">Understanding the data behind an order.</h2><p class="project-lead">A group case study using Solaria to explore how restaurant activities translate into entities, relationships, and database structures.</p></div>
+            <span class="project-type">Academic Case Study</span>
+          </div>
+          <dl class="project-facts">
+            <div><dt>Course</dt><dd>Data and Information Management</dd></div>
+            <div><dt>Group</dt><dd>Group 3</dd></div>
+            <div><dt>Database Technology</dt><dd>Oracle · SQL · PL/SQL</dd></div>
+          </dl>
+
+          <section class="project-brief" aria-labelledby="project-brief-title">
+            <div class="wrap">
+              <p class="eyebrow">Project at a Glance</p>
+              <h2 id="project-brief-title">Solaria Integrated Restaurant Operations Database</h2>
+              <ol class="project-brief-grid">
+                <li><h3><span>01</span>What</h3><p>This academic case study proposes an integrated Oracle database for Solaria’s multi-outlet restaurant operations.</p></li>
+                <li><h3><span>02</span>Why</h3><p>The scenario addresses fragmented sales, stock, purchasing, and customer records across restaurant operations.</p></li>
+                <li><h3><span>03</span>Goal</h3><p>The aim was to connect restaurant processes and support consistent transaction, inventory, and management records.</p></li>
+                <li><h3><span>04</span>My Role</h3><p>I designed the conceptual, logical, and physical database models, mapping the ordering journey and receipt details to ERD entities.</p></li>
+                <li><h3><span>05</span>How</h3><p>The group documented entity relationships, relational schemas, a data dictionary, and Oracle SQL and PL/SQL examples.</p></li>
+                <li><h3><span>06</span>Challenges</h3><p>The design required consistent relationships across transaction lines, payments, recipes, inventory, and different fulfilment types.</p></li>
+                <li><h3><span>07</span>Target Users</h3><p>The intended users in this academic scenario are outlet staff, warehouse and purchasing teams, and management.</p></li>
+                <li><h3><span>08</span>Results</h3><p>The group produced an ERD, relational mappings, a data dictionary, Oracle schema definitions, and PL/SQL examples.</p></li>
+              </ol>
+            </div>
+          </section>
+
+          <section class="dim-learning dim-section" aria-labelledby="dim-learning-title">
+            <div class="dim-section-heading"><p class="eyebrow">My Design Contribution</p><h3 id="dim-learning-title">From a familiar process to a database model.</h3><p>I used the ordering journey and the information on a restaurant receipt to understand what each entity represents and why the relationships matter.</p></div>
+            <ol class="dim-learning-grid">
+              <li><span class="dim-stage">01 / CONCEPTUAL</span><h4>Identify the business entities</h4><p>I traced how menu selection develops into an order, payment, and fulfilment. This helped me identify the entities and relationships behind each activity.</p></li>
+              <li><span class="dim-stage">02 / LOGICAL</span><h4>Connect the information</h4><p>I mapped item names, quantities, unit prices, and totals to linked records. Separating transaction headers from line items clarified how one order can contain several menu items.</p></li>
+              <li><span class="dim-stage">03 / PHYSICAL</span><h4>Define the database structure</h4><p>I translated those relationships into tables, columns, keys, data types, and constraint decisions. The group’s Oracle examples document the proposed implementation structure.</p></li>
+            </ol>
+          </section>
+
+          <section class="pg-panel dim-erd-gallery" data-project-gallery aria-labelledby="dim-erd-title">
+            <h3 id="dim-erd-title">Original Conceptual ERD</h3>
+            <p>Explore the original diagram from the Group 3 report. The report’s later relational and SQL sections expand this conceptual design.</p>
+            <div class="pg-items pg-items-single"><div class="pg-item">
+              <img src="assets/solaria-erd.png" alt="Original Solaria conceptual ERD linking restaurant transactions, menu items, customers, payments, outlets, inventory, staff, suppliers, warehouse operations, and delivery." width="1002" height="713" loading="lazy">
+              <strong>Solaria Restaurant Operations</strong>
+              <a class="pg-open" href="assets/solaria-erd.png" target="_blank" rel="noopener" data-pg-image data-pg-title="Solaria Conceptual ERD" data-pg-caption="Original conceptual entity relationship diagram from the Group 3 report. The mapping tables on this page use names from the report’s later Oracle schema definitions." data-pg-alt="Original Solaria conceptual ERD linking restaurant transactions, menu items, customers, payments, outlets, inventory, staff, suppliers, warehouse operations, and delivery." aria-label="Explore gallery: Solaria conceptual ERD">Explore Diagram <span aria-hidden="true">↗</span></a>
+            </div></div>
+          </section>
+
+          <section class="dim-section" aria-labelledby="dim-journey-title">
+            <div class="dim-section-heading"><p class="eyebrow">The Ordering Journey</p><h3 id="dim-journey-title">Following an order through the schema.</h3><p>The relationships below use the table names in the report’s Oracle schema definitions.</p></div>
+            <div class="dim-table-scroll" role="region" aria-label="Ordering journey to database entities, scroll horizontally on smaller screens" tabindex="0">
+              <table class="dim-mapping-table">
+                <caption>Ordering activities and their corresponding database structures</caption>
+                <thead><tr><th scope="col">Activity</th><th scope="col">Database structures</th><th scope="col">What the design records</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Select a menu item</th><td><code>menu_category</code><br><code>menu_item</code></td><td>Menu categories, item names, current prices, and availability.</td></tr>
+                  <tr><th scope="row">Record the order</th><td><code>transaction_header</code><br><code>transaction_detail</code></td><td>Order context and separate item lines, linked to the outlet, customer, staff member, and selected menu items.</td></tr>
+                  <tr><th scope="row">Record payment</th><td><code>payment</code><br><code>transaction_header</code></td><td>The payment method, amount, time, and reference linked to a transaction.</td></tr>
+                  <tr><th scope="row">Relate menu items to stock</th><td><code>recipe</code> → <code>recipe_detail</code> → <code>ingredient</code><br><code>inventory</code></td><td>Recipe ingredient requirements and ingredient stock held at an outlet. Stock deduction is a proposed processing requirement.</td></tr>
+                  <tr><th scope="row">Identify fulfilment</th><td><code>transaction_header</code><br><code>delivery</code><br><code>delivery_partner</code></td><td>Dine-in, takeaway, or delivery as the transaction type; delivery orders can link to courier, address, tracking, and delivery-status records.</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="dim-table-note">The schema does not define a separate Cart or Basket entity. A transaction marked <code>Pending</code> can illustrate an unfinished order; the document does not establish a persistent basket workflow.</p>
+          </section>
+
+          <section class="dim-section" aria-labelledby="dim-receipt-title">
+            <div class="dim-section-heading"><p class="eyebrow">Learning from a Receipt</p><h3 id="dim-receipt-title">Recognising entities in everyday information.</h3><p>I used receipt details to connect familiar business information with the appropriate entities and attributes in the ERD.</p></div>
+            <div class="dim-table-scroll" role="region" aria-label="Receipt information to database fields, scroll horizontally on smaller screens" tabindex="0">
+              <table class="dim-mapping-table dim-receipt-table">
+                <caption>Receipt information and the fields that could represent it</caption>
+                <thead><tr><th scope="col">Receipt information</th><th scope="col">Corresponding fields</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Outlet identity</th><td><code>outlet.outlet_name</code>, <code>address</code>, <code>phone_number</code></td></tr>
+                  <tr><th scope="row">Transaction reference and date</th><td><code>transaction_header.trx_id</code>, <code>trx_date</code></td></tr>
+                  <tr><th scope="row">Staff identity</th><td><code>transaction_header.staff_id</code> → <code>staff.full_name</code></td></tr>
+                  <tr><th scope="row">Menu item names</th><td><code>transaction_detail.menu_id</code> → <code>menu_item.menu_name</code></td></tr>
+                  <tr><th scope="row">Quantity, unit price, and line total</th><td><code>transaction_detail.quantity</code>, <code>unit_price</code>, <code>subtotal</code></td></tr>
+                  <tr><th scope="row">Discount and transaction totals</th><td><code>transaction_header.discount_amount</code>, <code>total_amount</code>, <code>net_total</code></td></tr>
+                  <tr><th scope="row">Payment information</th><td><code>payment.payment_method</code>, <code>amount</code>, <code>payment_time</code>, <code>reference_code</code></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="dim-table-note">These fields could support receipt information. The schema has no dedicated Receipt entity, and the submitted evidence does not demonstrate receipt generation or printing.</p>
+          </section>
+
+          <section class="dim-section dim-scope" aria-labelledby="dim-scope-title">
+            <div class="dim-section-heading"><p class="eyebrow">Reading the Design</p><h3 id="dim-scope-title">Scope and implementation status.</h3></div>
+            <ul class="dim-scope-list">
+              <li><strong>Academic context.</strong> Solaria is the business case used for this coursework. The material documents the group’s proposed database design.</li>
+              <li><strong>Preparation and inventory.</strong> Recipe relationships describe ingredient requirements. Recipe-based stock updates and audit procedures are proposed in the report; the supplied material does not establish a complete, tested stock-automation implementation.</li>
+              <li><strong>Service and delivery.</strong> The schema distinguishes dine-in, takeaway, and delivery transactions. Delivery status refers to courier fulfilment. A separate kitchen queue, cooking status, or dining-table service entity is not defined.</li>
+              <li><strong>Evidence.</strong> The deliverables are design documents and Oracle SQL/PLSQL examples. Database execution results, a completed APEX application, and measured operational improvements are not documented.</li>
+            </ul>
+          </section>
+
+          <div class="dim-attribution"><h3>Project Attribution</h3><p>Group 3: Kennes Jansen, Erwin Rommel Immanuel, Muhammad Arif Fadhilah, Christopher Chandra, and Albert Ciandratana.</p><p>My contribution focused on conceptual, logical, and physical database design. The report records the wider group deliverables.</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap closing"><p><strong>Muhammad Arif Fadhilah</strong><br>Information Systems Student · Business Intelligence</p><a class="back" href="#atas">Back to Top ↑</a></footer>
+</body>
+</html>

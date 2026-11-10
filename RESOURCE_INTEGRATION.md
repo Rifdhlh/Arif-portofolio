@@ -28,3 +28,11 @@ The PHP mark in `dist/assets/php.svg` comes from the Simple Icons project and is
 ## Pizza transaction-level interpretation
 
 The pizza case study also explains monthly revenue and weekday/hour order activity using aggregate-only data verified against `orders.csv`, `order_details.csv`, and `pizzas.csv`. Revenue is calculated once per order line as quantity multiplied by pizza price; each order is counted once in the heatmap. The accessible chart and heatmap reproduce the supplied transaction-level view. The original coursework sales image remains clearly labelled as a different calculation context. Managerial suggestions are presented as recommendations to investigate, with no claim that they were implemented or caused business improvements.
+
+## Connected workbook and subsequent project updates
+
+The interactive pizza dashboard uses an anonymised basket-and-line snapshot whose inputs were checked against the connected workbook in bounded batches: all 21,350 orders, 48,620 order lines, 800 customer cohort records, 96 fixed menu prices, and 32 pizza types matched. Excel time fractions were rounded to seconds before deriving hours to avoid floating-point boundary errors. Original customer names, contact fields, and source IDs are excluded.
+
+The public model uses matching line revenue, distinct qualifying baskets, distinct active anonymous customers, and matching revenue per qualifying order. All five filters are coordinated. The original worksheet and source files remain unchanged.
+
+The supplied Data and Information Management markdown and Word documents contain equivalent project text and ERD evidence. The Solaria page presents an academic database design rather than a deployed client system. The user directly confirmed conceptual, logical, and physical design work and the learning exercise of mapping order journeys and receipt details to ERD entities. Original student IDs are not included in the public project evidence. Course descriptions for Data Modelling, Data Visualization, Database Fundamental, and Data and Information Management follow the supplied course information. HIMSISFO experience wording and dates are aligned with the original CV.

@@ -1,0 +1,79 @@
+/* Foundations and case-study layouts for the Data and Information Management project. */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:112px}
+body.dim-page{margin:0;background:var(--paper,#141713);color:var(--ink,#f2f3ed);font-family:var(--font-body,Arial,Helvetica,sans-serif);font-size:16px;line-height:1.75}
+a{color:inherit}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent,#d5f66b);outline-offset:5px}
+.dim-page .wrap{max-width:1200px;margin:auto;padding:0 48px}
+.dim-page .skip{position:fixed;top:-100px;left:16px;padding:12px;z-index:30;background:var(--surface);color:var(--accent)}
+.dim-page .skip:focus{top:8px}
+.dim-page header{border-bottom:1px solid var(--line)}
+.dim-page nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.dim-page .brand{text-decoration:none;display:flex;align-items:center;gap:12px}
+.dim-page .navlinks{display:flex;flex-wrap:wrap;gap:30px;align-items:center}
+.dim-page .navlinks a{text-decoration:none}
+.dim-page .projects-section{padding:62px 0 80px}
+.dim-page .back-to-skills{display:inline-block;margin-bottom:30px;text-decoration:none;font-weight:600}
+.dim-page .back-to-skills:hover{text-decoration:underline;text-underline-offset:4px}
+.dim-page .eyebrow{display:flex;align-items:center;gap:12px;text-transform:uppercase;margin:0}
+.dim-page .eyebrow:before{content:"";display:block;flex:0 0 26px;background:currentColor}
+.dim-page-title{font-size:clamp(2.5rem,5.1vw,4.25rem);font-weight:700;line-height:1.08;letter-spacing:-.045em;max-width:1000px;margin:20px 0 24px;overflow-wrap:break-word}
+.dim-page-intro{max-width:740px;margin:0 0 34px;font-size:18px;line-height:1.8;color:var(--muted)}
+.dim-page .project-case{border:1px solid var(--line);overflow:hidden}
+.dim-page .project-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:28px}
+.dim-page .project-heading .eyebrow{margin:0 0 16px}
+.dim-page .project-heading h2{font-size:clamp(2rem,3.8vw,2.9rem);font-weight:700;line-height:1.16;letter-spacing:-.035em;margin:0 0 16px}
+.dim-page .project-lead{max-width:690px;margin:0;color:var(--muted)}
+.dim-page .project-type{flex:0 0 auto;font-size:11px;padding:6px 10px;border:1px solid var(--line);white-space:nowrap}
+.dim-page .project-facts{display:grid;grid-template-columns:1.35fr .6fr 1fr;border-block:1px solid var(--line);margin:0}
+.dim-page .project-facts>div{min-width:0;padding:22px 30px}
+.dim-page .project-facts>div+div{border-left:1px solid var(--line)}
+.dim-page .project-facts dt{margin-bottom:7px}
+.dim-page .project-facts dd{margin:0;overflow-wrap:anywhere}
+.dim-page .project-brief h2{max-width:800px}
+.dim-page .project-brief .wrap{width:100%;max-width:none;padding:0 36px}
+.dim-section{padding:34px 36px;border-top:1px solid var(--line)}
+.dim-section-heading{max-width:790px;margin-bottom:26px}
+.dim-section-heading .eyebrow{font-size:10px}
+.dim-section-heading h3{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;line-height:1.25;margin:14px 0}
+.dim-section-heading>p:not(.eyebrow){color:var(--muted);font-size:15px;line-height:1.85;margin:0}
+.dim-learning-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;list-style:none;margin:0;padding:0}
+.dim-learning-grid>li{border-top:1px solid var(--line);padding-top:18px;min-width:0}
+.dim-stage{font:10px/1.6 var(--font-label,monospace);color:var(--accent);letter-spacing:.07em}
+.dim-learning-grid h4{font-size:17px;line-height:1.4;margin:12px 0}
+.dim-learning-grid p{font-size:14px;line-height:1.85;color:var(--muted);margin:0}
+.dim-page .dim-erd-gallery{margin:0;border-inline:0;border-radius:0;border-bottom:0;padding:32px 36px}
+.dim-page .dim-erd-gallery .pg-item{display:flex;flex-direction:column;align-items:flex-start;padding:18px}
+.dim-page .dim-erd-gallery .pg-item>img{width:100%;height:auto;max-height:none;object-fit:contain;margin:0 0 18px;border-radius:0}
+.dim-page .dim-erd-gallery .pg-item>strong{font-size:16px;margin-bottom:10px;align-self:auto}
+.dim-page .dim-erd-gallery .pg-open{margin:0;align-self:auto}
+.dim-table-scroll{width:100%;overflow:auto;border:1px solid var(--line);overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+.dim-table-scroll:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.dim-mapping-table{width:100%;min-width:660px;border-collapse:collapse;text-align:left;font-size:14px;line-height:1.8}
+.dim-mapping-table caption{text-align:left;padding:15px 18px;color:var(--muted);font-size:12px;background:var(--soft);border-bottom:1px solid var(--line)}
+.dim-mapping-table thead{background:var(--soft)}
+.dim-mapping-table th,.dim-mapping-table td{padding:16px 18px;border-bottom:1px solid var(--line);vertical-align:top}
+.dim-mapping-table thead th{font-size:11px;letter-spacing:.04em;color:var(--ink);font-weight:600}
+.dim-mapping-table tbody th{font-weight:600;min-width:145px;width:21%}
+.dim-mapping-table td{color:var(--muted)}
+.dim-mapping-table td:nth-child(2){width:35%}
+.dim-mapping-table tbody tr:last-child>*{border-bottom:0}
+.dim-mapping-table code,.dim-table-note code{color:var(--ink);font-family:var(--font-label,monospace);font-size:12px;overflow-wrap:anywhere}
+.dim-receipt-table{min-width:590px}
+.dim-receipt-table tbody th{width:33%;min-width:180px}
+.dim-receipt-table td:nth-child(2){width:auto}
+.dim-table-note{font-size:13px;line-height:1.85;color:var(--muted);margin:17px 0 0;max-width:820px}
+.dim-scope-list{margin:0;padding-left:20px;color:var(--muted);font-size:14px;line-height:1.9}
+.dim-scope-list li+li{margin-top:14px}
+.dim-scope-list strong{color:var(--ink);font-weight:600}
+.dim-attribution{padding:29px 36px;border-top:1px solid var(--line)}
+.dim-attribution h3{font-size:18px;margin:0 0 12px}
+.dim-attribution p{font-size:14px;line-height:1.85;color:var(--muted);max-width:850px;margin:0 0 12px}
+.dim-attribution p:last-child{margin-bottom:0}
+.dim-page .closing{display:flex;align-items:center;justify-content:space-between;gap:26px;padding-top:32px;padding-bottom:32px}
+.dim-page .closing p{margin:0;color:var(--muted);font-size:12px}
+.dim-page .closing strong{color:var(--ink);font-weight:600}
+.dim-page .back{text-decoration:none;white-space:nowrap;font-size:12px}
+@media(max-width:1000px){.dim-page .wrap{padding-inline:30px}.dim-page .navlinks{gap:20px}.dim-page .project-heading{flex-direction:column;gap:22px}.dim-learning-grid{gap:22px}.dim-page .project-facts>div{padding:20px 23px}}
+@media(max-width:700px){html{scroll-padding-top:140px}.dim-page .wrap{padding-inline:22px}.dim-page nav{flex-wrap:wrap;gap:14px;padding-top:16px;padding-bottom:16px;min-height:84px}.dim-page .brand{font-size:18px}.dim-page .navlinks{gap:15px;font-size:12px}.dim-page .navlinks .nav-contact{padding:6px 12px}.dim-page .projects-section{padding:38px 0 52px}.dim-page .back-to-skills{margin-bottom:24px;font-size:12px}.dim-page-title{font-size:clamp(2.2rem,8vw,3.5rem);letter-spacing:-.04em;margin:18px 0 20px}.dim-page-intro{font-size:16px;line-height:1.8;margin-bottom:27px}.dim-page .project-heading{padding:26px 22px}.dim-page .project-heading h2{font-size:30px}.dim-page .project-lead{font-size:14px}.dim-page .project-facts{grid-template-columns:1fr}.dim-page .project-facts>div{padding:17px 22px}.dim-page .project-facts>div+div{border-left:0;border-top:1px solid var(--line)}.dim-page .project-brief .wrap{padding-inline:22px}.dim-section{padding:27px 22px}.dim-section-heading{margin-bottom:22px}.dim-section-heading h3{font-size:26px}.dim-section-heading>p:not(.eyebrow){font-size:14px}.dim-learning-grid{grid-template-columns:1fr;gap:23px}.dim-learning-grid h4{font-size:17px;margin:9px 0}.dim-learning-grid p{font-size:14px}.dim-page .dim-erd-gallery{padding:26px 22px}.dim-page .dim-erd-gallery .pg-item{display:flex;padding:12px}.dim-page .dim-erd-gallery .pg-item>img{height:auto;margin-bottom:14px}.dim-page .dim-erd-gallery .pg-item>strong{font-size:14px}.dim-page .dim-erd-gallery .pg-open{font-size:13px}.dim-mapping-table{font-size:13px}.dim-mapping-table th,.dim-mapping-table td{padding:13px 15px}.dim-mapping-table caption{padding:13px 15px;font-size:11px}.dim-table-note{font-size:12px}.dim-scope-list{font-size:13px}.dim-attribution{padding:25px 22px}.dim-attribution p{font-size:13px}.dim-page .closing{align-items:flex-start;flex-wrap:wrap;padding-block:27px}.dim-page .closing .motion-toggle{order:3}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

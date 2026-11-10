@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the Pizza Restaurant Sales Analysis dashboard. Filter 2015 sales by date, city, customer segment, pizza category, and revenue band, with insights that follow your selection.">
+  <meta name="theme-color" content="#141713">
+  <title>Interactive Pizza Sales Dashboard — Muhammad Arif Fadhilah</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/portfolio-theme.css">
+  <link rel="stylesheet" href="assets/portfolio-interactions.css">
+  <link rel="stylesheet" href="assets/course-navigation.css">
+  <link rel="stylesheet" href="assets/pizza-dashboard.css">
+  <script src="assets/pizza-dashboard-model.js" defer></script>
+  <script src="assets/pizza-dashboard.js" defer></script>
+  <script src="assets/portfolio-interactions.js" defer></script>
+  <script src="assets/course-navigation.js" defer></script>
+</head>
+<body class="pizza-dashboard-page" id="atas">
+  <a class="skip" href="#utama">Skip to dashboard</a>
+  <header class="site-header"><nav class="wrap" aria-label="Main navigation"><a class="brand" href="index.html" aria-label="Arif, home">Arif Fadhilah</a><div class="navlinks"><a href="pizza-sales-analysis.html">Case Study</a><a href="index.html#keahlian">Course Projects</a><a class="nav-contact" href="index.html#contact">Let's Talk</a></div></nav></header>
+  <a class="course-back-button" href="pizza-sales-analysis.html" aria-label="Go back to the previous page"><span aria-hidden="true">←</span> Back</a>
+  <main id="utama" class="dashboard-wrap">
+    <section class="dashboard-intro" aria-labelledby="dashboard-title">
+      <div><p class="eyebrow">Data Modelling · Interactive Coursework</p><h1 id="dashboard-title">Pizza sales.<br><span>Your questions, explored.</span></h1><p>Choose a trading period and customer or product filters. Every metric, chart, and explanation below updates to reflect the same selection.</p></div>
+      <div class="dashboard-source-badge"><span class="dashboard-source-icon" aria-hidden="true">↗</span><div><strong>Workbook dashboard, reimagined for the web</strong><span>2015 sales · BE11_Project_11.xlsx</span><a href="pizza-sales-analysis.html">Read the project story →</a></div></div>
+    </section>
+    <p id="dashboard-loading" class="dashboard-load-status" role="status">Loading the interactive workbook snapshot…</p>
+    <div class="dashboard-shell" id="dashboard-shell" hidden>
+      <aside class="dashboard-sidebar" aria-label="Dashboard filters">
+        <details class="dashboard-filter-disclosure" id="dashboard-filter-disclosure" open>
+          <summary><span>Filters</span><span class="filter-mobile-hint">Choose your view <span aria-hidden="true">+</span></span></summary>
+          <form id="dashboard-filter-form" aria-describedby="filter-instructions">
+            <p class="filter-instructions" id="filter-instructions">Choose one or more values in each group. All charts follow the same filters.</p>
+            <div class="dashboard-filter-date"><h2>Trading period</h2><label for="filter-start">From</label><input id="filter-start" name="startDate" type="date" required><label for="filter-end">To</label><input id="filter-end" name="endDate" type="date" required><p id="date-error" class="dashboard-input-error" role="alert" hidden></p></div>
+            <div id="dashboard-filter-groups"></div>
+            <button class="dashboard-reset" type="button" data-reset-filters>Reset filters <span aria-hidden="true">↺</span></button>
+          </form>
+          <p class="dashboard-filter-footnote">Filters change this browser view only. Your Excel workbook remains unchanged.</p>
+        </details>
+      </aside>
+      <div class="dashboard-results">
+        <div class="dashboard-view-heading"><div><p class="eyebrow">Current Selection</p><h2 id="view-heading">Your sales overview</h2></div><p id="dashboard-result-count"></p></div>
+        <div id="dashboard-scope" class="dashboard-scope" aria-label="Applied filters"></div>
+        <dl class="dashboard-kpis" id="dashboard-kpis"><div><dt>Sales revenue</dt><dd data-kpi="revenue">—</dd><span>Matching pizza sales</span></div><div><dt>Orders</dt><dd data-kpi="orders">—</dd><span>Distinct matching orders</span></div><div><dt>Pizzas sold</dt><dd data-kpi="quantity">—</dd><span>Matching line quantities</span></div><div><dt>Active customers</dt><dd data-kpi="customers">—</dd><span>Within this selection</span></div><div><dt>Revenue per order</dt><dd data-kpi="aov">—</dd><span>Matching sales ÷ orders</span></div></dl>
+        <section class="dashboard-question-panel" aria-labelledby="dashboard-question-title">
+          <div class="dashboard-question-control"><div><p class="eyebrow">Ask the Dashboard</p><label for="dashboard-question" id="dashboard-question-title">What would you like to know?</label></div><select id="dashboard-question"><option value="overview">How is this selection performing?</option><option value="trend">When does sales revenue peak?</option><option value="products">Which pizzas drive sales revenue?</option><option value="operations">When is the restaurant busiest?</option><option value="customers">How is customer spending distributed?</option></select></div>
+          <div id="dashboard-insight" class="dashboard-insight"></div>
+        </section>
+        <div id="dashboard-empty" class="dashboard-empty" hidden><span aria-hidden="true">↳</span><h2>No orders match this view.</h2><p>Choose at least one value in every filter group or expand the date range.</p><button type="button" class="dashboard-reset" data-reset-filters>Reset filters</button></div>
+        <div class="dashboard-charts" id="dashboard-charts">
+          <section class="dashboard-chart-card dashboard-chart-wide" id="chart-trend" aria-labelledby="trend-heading"><div class="dashboard-card-heading"><div><p class="eyebrow">01 / Sales Over Time</p><h2 id="trend-heading">Monthly revenue</h2></div><span class="dashboard-unit">USD</span></div><p class="dashboard-chart-context" id="trend-context"></p><div id="trend-visual"></div><details class="dashboard-data-disclosure"><summary>View monthly figures</summary><div class="dashboard-table-scroll" tabindex="0" aria-label="Monthly sales data" role="region" id="trend-table"></div></details></section>
+          <section class="dashboard-chart-card" id="chart-products" aria-labelledby="products-heading"><div class="dashboard-card-heading"><div><p class="eyebrow">02 / Product Mix</p><h2 id="products-heading">Pizzas behind the revenue</h2></div></div><p class="dashboard-chart-context" id="products-context"></p><div id="products-visual"></div><details class="dashboard-data-disclosure"><summary>View every matching pizza type</summary><div class="dashboard-table-scroll" tabindex="0" aria-label="Pizza type sales data" role="region" id="products-table"></div></details></section>
+          <section class="dashboard-chart-card" id="chart-operations" aria-labelledby="operations-heading"><div class="dashboard-card-heading"><div><p class="eyebrow">03 / Operating Hours</p><h2 id="operations-heading">When orders arrive</h2></div></div><p class="dashboard-chart-context" id="operations-context"></p><div id="operations-visual"></div><details class="dashboard-data-disclosure"><summary>View hourly revenue and orders</summary><div class="dashboard-table-scroll" tabindex="0" aria-label="Hourly sales data" role="region" id="operations-table"></div></details><details class="dashboard-data-disclosure"><summary>Explore the weekday and hour heatmap</summary><div class="dashboard-table-scroll" tabindex="0" aria-label="Weekday and hour order heatmap, scroll to view all hours" role="region" id="operations-heatmap"></div></details></section>
+          <section class="dashboard-chart-card" id="chart-customers" aria-labelledby="customers-heading"><div class="dashboard-card-heading"><div><p class="eyebrow">04 / Customer Spending</p><h2 id="customers-heading">Top customers in this view</h2></div></div><p class="dashboard-chart-context" id="customers-context"></p><div id="customers-visual"></div><details class="dashboard-data-disclosure"><summary>View the top 10 customer figures</summary><div class="dashboard-table-scroll" tabindex="0" aria-label="Anonymous customer spending data" role="region" id="customers-table"></div></details></section>
+          <section class="dashboard-chart-card" id="chart-demographics" aria-labelledby="demographics-heading"><div class="dashboard-card-heading"><div><p class="eyebrow">05 / Customer Demography</p><h2 id="demographics-heading">Customers by city and segment</h2></div></div><p class="dashboard-chart-context" id="demographics-context"></p><div id="demographics-visual"></div><details class="dashboard-data-disclosure"><summary>View customer counts by city</summary><div class="dashboard-table-scroll" tabindex="0" aria-label="City and segment customer counts" role="region" id="demographics-table"></div></details></section>
+        </div>
+        <details class="dashboard-methodology"><summary>How to read this dashboard</summary><div><p>This is a browser-based version of the workbook dashboard using its 2015 sales snapshot. It does not maintain a live connection to your open Excel file.</p><p>Revenue is calculated from the matching order-line quantity multiplied by its fixed pizza price. Orders count distinct baskets containing at least one matching line; active customers count distinct anonymous customers within those baskets. Revenue per order uses matching revenue divided by matching orders.</p><p>Revenue bands apply to each order line: Low is below $20; Moderate is $20–$60 inclusive; High is above $60. An order may contain lines from more than one category or band, so adding filtered order counts can double-count orders.</p><p>Customer labels are anonymised. Spending describes the selected historical period, rather than predicted customer lifetime value. Revenue does not represent profit. Recommendations identify questions to investigate; they do not establish causes or proven business results.</p><a href="pizza-sales-analysis.html#pizza-insights-title">Explore the supporting case study ↗</a></div></details>
+      </div>
+    </div>
+    <p class="dashboard-sr-only" id="dashboard-announcement" role="status" aria-live="polite" aria-atomic="true"></p>
+    <noscript><div class="dashboard-empty"><h2>JavaScript is needed for interactive filtering.</h2><p>You can still <a href="pizza-sales-analysis.html#pizza-insights-title">read the project analysis and static charts</a>.</p></div></noscript>
+  </main>
+  <footer class="wrap closing"><p><strong>Muhammad Arif Fadhilah</strong><br>Information Systems Student · Business Intelligence</p><a class="back" href="pizza-sales-analysis.html">Back to the case study ↑</a></footer>
+</body>
+</html>
