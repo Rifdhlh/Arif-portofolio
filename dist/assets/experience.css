@@ -69,3 +69,18 @@
  .experience-count { width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) { .experience-plus, .experience-filters button { transition: none; } }
+
+/* Original design examples, scoped to the expanded experience role. */
+.experience-role-content .experience-design-work { padding: 22px 0 0; margin-top: 22px; border-top: 1px solid var(--line); }
+.experience-design-work h4 { margin: 0 0 10px; color: var(--ink); font-size: 19px; line-height: 1.4; letter-spacing: -.025em; }
+.experience-design-work > p { margin-bottom: 18px; }
+.experience-design-grid { display: grid; grid-template-columns: minmax(0,1fr); gap: 20px; }
+.experience-design { min-width: 0; margin: 0; padding: 14px; background: #171d14; border: 1px solid var(--line); }
+.experience-design-preview { display: block; width: 100%; max-width: 100%; height: auto; }
+.experience-design figcaption { padding-top: 15px; }
+.experience-design figcaption strong { display: block; color: var(--ink); font-size: 14px; line-height: 1.5; margin-bottom: 7px; }
+.experience-role-content .experience-design figcaption p { margin: 0 0 12px; color: var(--muted); font-size: 13px; line-height: 1.8; }
+.experience-design figcaption a { display: inline-flex; align-items: center; gap: 9px; min-height: 40px; padding: 6px 0; color: var(--accent); font-size: 12px; font-weight: 600; text-decoration: none; }
+.experience-design figcaption a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.experience-design figcaption a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+@media(max-width:700px) { .experience-role-content .experience-design-work { padding-top: 20px; margin-top: 20px; } .experience-design { padding: 11px; } .experience-design-work h4 { font-size: 18px; } .experience-design figcaption strong { font-size: 13px; } }
