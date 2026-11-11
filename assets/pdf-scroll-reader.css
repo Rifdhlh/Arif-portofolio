@@ -1,0 +1,27 @@
+/* Continuous PDF pages, independent of the existing single-page reader. */
+[data-pdf-scroll-reader]{border:1px solid var(--line,#373d35);background:var(--surface,#1d211c);color:var(--ink,#f2f3ed);min-width:0}
+[data-pdf-scroll-status]{font-size:12px;line-height:1.7;color:var(--muted,#b0b5ac);padding:13px 20px;margin:0;border-bottom:1px solid var(--line,#373d35)}
+[data-pdf-scroll-viewport]{position:relative;isolation:isolate;height:min(75vh,820px);min-height:320px;width:100%;max-width:100%;overflow:auto;padding:22px;background:#0d100b;overscroll-behavior:contain;scroll-behavior:auto;overflow-anchor:none;touch-action:pan-x pan-y pinch-zoom;scrollbar-width:thin;scrollbar-color:#67754c #151a11}
+[data-pdf-scroll-viewport]:focus-visible,[data-pdf-scroll-reader] :is(button,input,select,summary):focus-visible{outline:3px solid var(--accent,#d5f66b);outline-offset:3px}
+[data-pdf-scroll-pages]{display:flex;flex-direction:column;align-items:center;gap:26px;width:max-content;min-width:100%;margin:0;padding:0;box-sizing:border-box}
+[data-pdf-scroll-reader] .pdf-scroll-page{flex:none;min-width:0;margin:0;padding:0;border:0;background:transparent;box-sizing:border-box;scroll-margin-top:12px}
+[data-pdf-scroll-reader] .pdf-scroll-page-title{font:600 12px/1.6 var(--font-body,"Segoe UI",Arial,sans-serif);color:var(--muted,#b0b5ac);letter-spacing:0;margin:0 0 9px;padding:0}
+[data-pdf-scroll-reader] .pdf-scroll-paper{position:relative;isolation:isolate;flex:none;overflow:hidden;background:#fff;box-shadow:0 4px 20px #0005;min-width:0;box-sizing:border-box}
+[data-pdf-scroll-reader] .pdf-scroll-paper canvas{position:absolute;inset:0;display:block;max-width:none;max-height:none;margin:0;padding:0;box-sizing:content-box;background:#fff}
+[data-pdf-scroll-reader] .pdf-scroll-placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;max-width:none;font:13px/1.8 var(--font-body,"Segoe UI",Arial,sans-serif);color:#59634f;text-align:center;background:#f6f7f3;margin:0;padding:25px;overflow-wrap:anywhere}
+[data-pdf-scroll-reader] .pdf-scroll-placeholder[hidden]{display:none}
+[data-pdf-scroll-reader] .pdf-scroll-page-text{margin:12px 0 0;border:1px solid var(--line,#373d35);padding:0;background:var(--surface,#1d211c);max-width:100%;box-sizing:border-box}
+[data-pdf-scroll-reader] .pdf-scroll-page-text summary{color:var(--accent,#d5f66b);font:500 12px/1.7 var(--font-body,"Segoe UI",Arial,sans-serif);cursor:pointer;padding:10px 14px;min-height:40px;box-sizing:border-box}
+[data-pdf-scroll-reader] .pdf-scroll-text-content{white-space:pre-wrap;overflow-wrap:anywhere;max-height:320px;overflow:auto;margin:0;padding:15px 17px;border-top:1px solid var(--line,#373d35);font:13px/1.9 var(--font-body,"Segoe UI",Arial,sans-serif);color:var(--ink,#f2f3ed);background:#171c14;overscroll-behavior:contain;scrollbar-width:thin;box-sizing:border-box}
+[data-pdf-scroll-reader] .pdf-scroll-text-content:focus-visible{outline:3px solid var(--accent,#d5f66b);outline-offset:-3px}
+[data-pdf-scroll-reader] :is([data-pdf-scroll-previous],[data-pdf-scroll-next]){font:600 12px/1.4 var(--font-body,"Segoe UI",Arial,sans-serif);background:var(--surface,#1d211c);color:var(--ink,#f2f3ed);border:1px solid #67765a;border-radius:3px;min-height:38px;padding:8px 13px;cursor:pointer}
+[data-pdf-scroll-reader] :is([data-pdf-scroll-previous],[data-pdf-scroll-next]):hover:not(:disabled){color:var(--accent,#d5f66b);border-color:var(--accent,#d5f66b);background:#293322}
+[data-pdf-scroll-reader] :is([data-pdf-scroll-previous],[data-pdf-scroll-next]):disabled{opacity:.45;cursor:default}
+[data-pdf-scroll-reader] :is([data-pdf-scroll-number],[data-pdf-scroll-zoom]){font:13px/1.4 var(--font-body,"Segoe UI",Arial,sans-serif);min-height:38px;padding:8px 10px;color:var(--ink,#f2f3ed);background:#141a11;border:1px solid #67765a;border-radius:3px;box-sizing:border-box}
+[data-pdf-scroll-number]{width:66px;font-variant-numeric:tabular-nums}
+[data-pdf-scroll-count]{font-variant-numeric:tabular-nums}
+.pdf-scroll-controls{display:flex;align-items:center;flex-wrap:wrap;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line,#373d35);background:var(--soft,#252b23)}
+.pdf-scroll-controls label{display:inline-flex;align-items:center;gap:9px;color:var(--muted,#b0b5ac);font:12px/1.6 var(--font-body,"Segoe UI",Arial,sans-serif)}
+@media(max-width:700px){[data-pdf-scroll-viewport]{height:70vh;min-height:280px;padding:14px}[data-pdf-scroll-pages]{gap:22px}[data-pdf-scroll-status]{padding:12px 15px;font-size:11px}[data-pdf-scroll-reader] .pdf-scroll-page-title{font-size:11px;margin-bottom:8px}[data-pdf-scroll-reader] .pdf-scroll-page-text summary{font-size:12px;padding:10px 12px}[data-pdf-scroll-reader] .pdf-scroll-text-content{font-size:13px;padding:13px 14px}[data-pdf-scroll-reader] .pdf-scroll-placeholder{font-size:12px;padding:17px}[data-pdf-scroll-reader] :is([data-pdf-scroll-previous],[data-pdf-scroll-next]){font-size:11px;padding-inline:10px}}
+@media(prefers-reduced-motion:reduce){[data-pdf-scroll-viewport]{scroll-behavior:auto!important}}
+@media(max-width:700px){.pdf-scroll-controls{gap:10px;padding:13px 14px}.pdf-scroll-controls label{font-size:11px;gap:7px}}
