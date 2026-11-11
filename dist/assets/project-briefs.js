@@ -136,6 +136,40 @@ window.portfolioProjectBriefs = {
       "The group produced a multi-sheet analytical workbook, a connected data model, dashboard views, and a written project report."
     ]
   ],
+  "research-method.html": [
+    [
+      "What",
+      "This study examines university students’ acceptance of AI-driven learning analytics systems and their reported use of AI."
+    ],
+    [
+      "Why",
+      "The availability of AI technology does not necessarily mean students will adopt it."
+    ],
+    [
+      "Goal",
+      "The aim was to understand how compatibility, autonomy, AI knowledge, and technological confidence relate to adoption intention and usage."
+    ],
+    [
+      "My Role",
+      "I contributed to the research background, literature review, and interpretation of the findings."
+    ],
+    [
+      "How",
+      "The study used an online six-point Likert questionnaire, purposive sampling, and PLS-SEM analysis in SmartPLS."
+    ],
+    [
+      "Challenges",
+      "The analysis required data screening, assessment of measurement quality, and careful interpretation of relationships between constructs."
+    ],
+    [
+      "Target Users",
+      "The intended audience includes educational researchers and teams designing student-centred AI learning systems."
+    ],
+    [
+      "Results",
+      "The deliverables include a research manuscript, model diagrams, statistical summaries, and a thirteen-slide presentation reporting 244 valid responses."
+    ]
+  ],
   "system-analysis-projects.html": [
     [
       "What",

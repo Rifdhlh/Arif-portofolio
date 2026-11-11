@@ -17,6 +17,7 @@ Every requested website update must be published to GitHub Pages after validatio
 - `dist/dashboard-data-modelling.html`: Adult Census Income project, embedded presentation, and full PDF download
 - `dist/pizza-sales-analysis.html`: pizza restaurant sales modelling, monthly revenue and order-timing storytelling, charts, and documented group attribution
 - `dist/pizza-dashboard.html`: interactive workbook dashboard with coordinated filters and question-led insights
+- `dist/research-method.html`: AI learning analytics acceptance research, a continuous scrollable presentation reader, and a source-backed project brief
 - `dist/data-information-management.html`: Solaria database design, course context, order/receipt mapping, and verified individual contribution
 - `dist/tableau-sales-performance.html`: retail sales preparation, Tableau dashboard, original report, and presentation
 - `dist/database-projects.html`: Long-Life Shoe Factory
@@ -35,7 +36,7 @@ Every existing and future project follows **What → Why → Goal → My Role �
 
 ## Portfolio Interactions
 
-The homepage highlights seven course projects directly, with live project search, discipline filters, quick views, and tool icons at the bottom-right of every card. Each card opens its case study. The existing dark palette, lime accents, hero, About section, experience, technology highlights, contact details, and original CV are retained. StSport, Long-Life, Tableau, and pizza project pages include image galleries with navigation, zoom, and keyboard controls. The Data Modelling page retains its PDF reader and download links. These interactions run in the browser and remain compatible with GitHub Pages.
+The homepage highlights eight course projects directly, with live project search, discipline filters, quick views, and tool icons at the bottom-right of every card. Each card opens its case study. The existing dark palette, lime accents, hero, About section, experience, technology highlights, contact details, and original CV are retained. StSport, Long-Life, Tableau, and pizza project pages include image galleries with navigation, zoom, and keyboard controls. The Data Modelling page retains its PDF reader and download links. These interactions run in the browser and remain compatible with GitHub Pages.
 
 ## Vincraft Preview
 
@@ -50,3 +51,7 @@ The supplied `resource.zip` was checked file by file against the original reposi
 The pizza dashboard runs entirely in the visitor’s browser from an anonymised snapshot verified against the connected `BE11_Project_11.xlsx` workbook on 9 November 2026. It does not keep a live connection to the desktop workbook. Date, city, customer segment, pizza category, and revenue-band filters update every KPI, chart, table, and explanation together. Visitors can choose which analytical question to explore. Original customer names, contact details, and source record identifiers are excluded from the public data.
 
 Run `node --test tests/pizza-dashboard-model.test.cjs` to verify the numerical model and filter combinations. The shared Back control follows browser history, with a relevant parent-page fallback for direct visits. Same-origin navigation uses native document transitions where available, respects reduced motion, and preserves normal scroll restoration.
+
+## Research Method presentation
+
+The Research Method case study uses the paper title, **Student Acceptance of AI-Driven Learning Analytics System**. Its original 13-page PDF is displayed in a continuous, keyboard-scrollable PDF.js reader with page navigation, zoom, page text, and open/download links. The concise explanation below the reader and homepage Quick View use the same eight-field brief. Arif’s individual contribution is attributed from the supplied manuscript; the brief avoids numerical hypothesis claims that differ between the manuscript and presentation. The original PDF is retained unchanged, including its final template slide.

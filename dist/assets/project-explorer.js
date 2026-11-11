@@ -184,6 +184,31 @@
         "href": "data-information-management.html"
       }
     ]
+  },
+  "research": {
+    "title": "Student Acceptance of AI-Driven Learning Analytics System",
+    "keywords": "Research Method Student Acceptance AI-Driven Learning Analytics System artificial intelligence AI university quantitative survey PLS SEM SmartPLS compatibility autonomy knowledge technological competence adoption intention actual usage",
+    "entries": [
+      {
+        "title": "Student Acceptance of AI-Driven Learning Analytics System",
+        "description": "A quantitative study exploring students’ acceptance and reported use of AI-driven learning analytics systems.",
+        "facts": [
+          [
+            "Course",
+            "Research Method"
+          ],
+          [
+            "Method",
+            "Quantitative Survey, PLS-SEM"
+          ],
+          [
+            "Analysis Tool",
+            "SmartPLS"
+          ]
+        ],
+        "href": "research-method.html"
+      }
+    ]
   }
 };
 
