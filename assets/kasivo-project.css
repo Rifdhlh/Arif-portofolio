@@ -1,0 +1,96 @@
+/* Kasivo case study: retain the portfolio theme and original project artwork. */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body.kasivo-page{margin:0}
+.kasivo-page a{color:inherit}
+.kasivo-page .wrap{max-width:1200px;margin:auto;padding-inline:48px}
+.kasivo-page .skip{position:fixed;top:-100px;left:16px;padding:12px;z-index:30}
+.kasivo-page .skip:focus{top:8px}
+.kasivo-page :focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+.kasivo-page header{border-bottom:1px solid var(--line)}
+.kasivo-page nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.kasivo-page .brand,.kasivo-page .navlinks a{text-decoration:none}
+.kasivo-page .navlinks{display:flex;align-items:center;flex-wrap:wrap;gap:30px}
+.kasivo-content{padding-block:64px 72px!important}
+.kasivo-page .eyebrow{display:flex;align-items:center;gap:12px;text-transform:uppercase;margin:0}
+.kasivo-page .eyebrow:before{content:"";display:block;flex:0 0 26px;background:currentColor}
+.kasivo-kicker{display:flex;align-items:center;flex-wrap:wrap;gap:16px;justify-content:space-between}
+.kasivo-status{padding:5px 11px;border:1px solid #8da052;background:#2e381e;color:var(--accent);font:600 11px/1.7 var(--font-label,monospace);letter-spacing:.05em;white-space:nowrap}
+.kasivo-page h1{font-size:clamp(2.2rem,4.5vw,3.7rem);line-height:1.12;max-width:1040px;margin:22px 0;overflow-wrap:break-word}
+.kasivo-intro{color:var(--muted);font-size:18px;max-width:850px;margin:0 0 28px}
+.kasivo-intro strong{color:var(--ink)}
+.kasivo-progress-note{border:1px solid #687846;border-left:3px solid var(--accent);background:#20271c;padding:22px 26px;margin-bottom:28px}
+.kasivo-progress-note h2{font-size:18px;line-height:1.45;letter-spacing:-.02em;margin:0 0 8px}
+.kasivo-progress-note p{font-size:14px;line-height:1.85;color:var(--muted);max-width:950px;margin:0}
+.kasivo-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--line);margin:0 0 22px;background:var(--surface)}
+.kasivo-facts>div{padding:18px 22px;min-width:0}
+.kasivo-facts>div:not(:nth-child(3n+1)){border-left:1px solid var(--line)}
+.kasivo-facts>div:nth-child(n+4){border-top:1px solid var(--line)}
+.kasivo-facts dt{font-size:10px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.08em;font-family:var(--font-label,monospace)}
+.kasivo-facts dd{font-size:14px;font-weight:600;margin:0;overflow-wrap:anywhere}
+.kasivo-course-context{font-size:13px;line-height:1.85;color:var(--muted);max-width:940px;margin:8px 0}
+.kasivo-course-context strong{color:var(--ink);font-weight:600}
+.kasivo-course-proof{margin-top:20px;max-width:760px}
+.kasivo-course-proof>summary{cursor:pointer;color:var(--accent);font-size:12px;font-weight:600;padding:8px 0}
+.kasivo-course-proof .kasivo-document{margin-top:12px}
+.kasivo-page .kasivo-course-proof img{width:min(100%,620px)}
+.kasivo-page .project-brief{margin-top:38px;padding:30px 0;border-top:1px solid var(--line)}
+.kasivo-page .project-brief>.wrap{padding:0}
+.kasivo-section{padding:38px 0;border-top:1px solid var(--line)}
+.kasivo-section-heading{max-width:920px;margin-bottom:26px}
+.kasivo-section-heading h2{font-size:clamp(1.65rem,3.1vw,2.3rem);line-height:1.2;margin:14px 0}
+.kasivo-section-heading>p:not(.eyebrow){font-size:15px;line-height:1.85;color:var(--muted);margin:0;max-width:850px}
+.kasivo-label,.kasivo-stage{font:10px/1.7 var(--font-label,monospace);letter-spacing:.06em;color:var(--accent)}
+.kasivo-problem-grid,.kasivo-access-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.kasivo-problem-grid article,.kasivo-access-grid article{padding:24px;border:1px solid var(--line);background:var(--surface);min-width:0}
+.kasivo-problem-grid h3,.kasivo-access-grid h3{font-size:18px;line-height:1.35;margin:14px 0 12px}
+.kasivo-access-grid h3{margin-top:0}
+.kasivo-problem-grid p,.kasivo-access-grid p{font-size:14px;line-height:1.85;color:var(--muted);margin:0}
+.kasivo-progress-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.kasivo-progress-list>li{border-top:2px solid #657448;padding-top:19px;min-width:0}
+.kasivo-progress-list h3{font-size:21px;line-height:1.3;margin:12px 0}
+.kasivo-progress-list p{font-size:14px;line-height:1.85;color:var(--muted);margin:0}
+.kasivo-progress-list .kasivo-date{font:11px/1.7 var(--font-label,monospace);color:var(--accent);margin:0 0 12px}
+.kasivo-screen-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}
+.kasivo-page .kasivo-screen{display:flex;flex-direction:column;align-items:stretch;padding:0;margin:0;border-radius:0;border:1px solid var(--line);background:var(--surface);overflow:hidden}
+.kasivo-page .kasivo-screen>img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;background:#f9f8f2;margin:0;border-radius:0}
+.kasivo-screen figcaption{padding:23px 24px;min-width:0}
+.kasivo-screen h3{font-size:21px;line-height:1.3;margin:11px 0 12px}
+.kasivo-screen p{font-size:14px;line-height:1.8;color:var(--muted);margin:0 0 17px}
+.kasivo-page .pg-open{font-size:12px;color:var(--accent);margin:0}
+.kasivo-contribution{margin:32px 0 24px;padding:25px 28px;border:1px solid #788b4d;border-left:3px solid var(--accent);background:#232b1d}
+.kasivo-contribution h3{font-size:25px;line-height:1.3;margin:13px 0}
+.kasivo-contribution p:not(.eyebrow){font-size:15px;line-height:1.85;color:var(--muted);max-width:900px;margin:0}
+.kasivo-page .kasivo-my-design{border-top:3px solid #a8bf62}
+.kasivo-access-grid{margin-bottom:26px}
+.kasivo-page .kasivo-document{display:flex;flex-direction:column;align-items:center;padding:0;border:1px solid var(--line);border-radius:0;margin:0;background:var(--surface);overflow:hidden}
+.kasivo-page .kasivo-document>img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;border-radius:0;margin:0;background:white}
+.kasivo-document figcaption{padding:23px 26px;width:100%;border-top:1px solid var(--line)}
+.kasivo-document h3{font-size:20px;line-height:1.3;margin:0 0 12px}
+.kasivo-document p{font-size:14px;line-height:1.85;color:var(--muted);margin:0 0 16px;max-width:900px}
+.kasivo-page .kasivo-timeline>img{width:min(100%,760px)}
+.kasivo-interview-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}
+.kasivo-interview-card{border:1px solid var(--line);background:var(--surface);padding:25px 26px;min-width:0}
+.kasivo-interview-card h3{font-size:23px;line-height:1.3;margin:13px 0}
+.kasivo-interview-card>p{font-size:14px;line-height:1.85;color:var(--muted);margin:0 0 20px}
+.kasivo-download{display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:600;color:var(--accent)!important;text-decoration:none;text-underline-offset:4px}
+.kasivo-download:hover{text-decoration:underline}
+.kasivo-questions{margin-top:23px;border-top:1px solid var(--line)}
+.kasivo-questions summary{cursor:pointer;padding:18px 0 0;font-size:13px;font-weight:600;color:var(--ink);line-height:1.7}
+.kasivo-questions ol{padding-left:23px;margin:20px 0 0;font-size:13px;line-height:1.9;color:var(--muted)}
+.kasivo-questions li{padding-left:4px;margin:0 0 16px}
+.kasivo-questions li:last-child{margin-bottom:0}
+.kasivo-questions strong{color:var(--ink);font-weight:600}
+.kasivo-team{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 30px;list-style:none;padding:0;margin:0}
+.kasivo-team>li{display:flex;flex-direction:column;gap:5px;padding:17px 0;border-top:1px solid var(--line);min-width:0}
+.kasivo-team strong{font-size:15px;font-weight:600;overflow-wrap:anywhere}
+.kasivo-team span{font-size:12px;color:var(--accent)}
+.kasivo-attribution{font-size:13px;line-height:1.85;color:var(--muted);max-width:900px;margin:22px 0 0}
+.kasivo-page .closing{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-block:28px;border-top:1px solid var(--line)}
+.kasivo-page .closing p{font-size:12px;color:var(--muted);margin:0}
+.kasivo-page .closing strong{color:var(--ink)}
+.kasivo-page .back{font-size:12px;text-decoration:none;white-space:nowrap}
+@media(max-width:1000px){.kasivo-page .wrap{padding-inline:30px}.kasivo-page .navlinks{gap:20px}.kasivo-problem-grid{grid-template-columns:1fr;gap:16px}.kasivo-problem-grid article{padding:22px}.kasivo-access-grid{gap:16px}.kasivo-access-grid article{padding:20px}.kasivo-screen-grid,.kasivo-interview-grid{gap:20px}.kasivo-screen figcaption,.kasivo-interview-card{padding:22px}}
+@media(max-width:700px){.kasivo-page .wrap{padding-inline:22px}.kasivo-content{padding-block:88px 48px!important}.kasivo-page nav{flex-wrap:wrap;gap:14px;padding-block:16px}.kasivo-page .navlinks{font-size:12px;gap:15px}.kasivo-page .navlinks .nav-contact{padding:6px 12px}.kasivo-page h1{font-size:clamp(2rem,7.6vw,3rem)}.kasivo-kicker{align-items:flex-start;gap:12px}.kasivo-kicker .eyebrow{font-size:9px;line-height:1.8;max-width:240px}.kasivo-status{font-size:10px}.kasivo-intro{font-size:16px}.kasivo-progress-note{padding:20px}.kasivo-progress-note h2{font-size:17px}.kasivo-progress-note p{font-size:13px}.kasivo-facts{grid-template-columns:1fr 1fr}.kasivo-facts>div{padding:16px}.kasivo-facts>div:not(:nth-child(3n+1)){border-left:0}.kasivo-facts>div:nth-child(even){border-left:1px solid var(--line)}.kasivo-facts>div:nth-child(n+3){border-top:1px solid var(--line)}.kasivo-facts dd{font-size:13px}.kasivo-facts dt{font-size:9px}.kasivo-section{padding:29px 0}.kasivo-section-heading{margin-bottom:22px}.kasivo-section-heading>p:not(.eyebrow){font-size:14px}.kasivo-progress-list,.kasivo-screen-grid,.kasivo-access-grid,.kasivo-interview-grid,.kasivo-team{grid-template-columns:1fr}.kasivo-screen-grid{gap:23px}.kasivo-page .kasivo-screen{display:flex}.kasivo-page .kasivo-screen>img{height:auto;grid-row:auto;margin:0}.kasivo-screen figcaption{padding:21px}.kasivo-screen h3{font-size:21px}.kasivo-screen p{font-size:13px}.kasivo-contribution{padding:22px;margin-top:25px}.kasivo-contribution h3{font-size:24px}.kasivo-contribution p:not(.eyebrow){font-size:14px}.kasivo-document figcaption{padding:21px}.kasivo-page .kasivo-document{display:flex}.kasivo-page .kasivo-document>img{height:auto;margin:0;grid-row:auto}.kasivo-document p{font-size:13px}.kasivo-interview-card h3{font-size:22px}.kasivo-page .closing{flex-wrap:wrap;align-items:flex-start}.kasivo-questions ol{font-size:13px}}
+@media(max-width:420px){.kasivo-facts{grid-template-columns:1fr}.kasivo-facts>div:nth-child(even){border-left:0}.kasivo-facts>div+div{border-top:1px solid var(--line)}.kasivo-facts>div{padding:15px 18px}.kasivo-kicker{flex-direction:column;gap:15px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
