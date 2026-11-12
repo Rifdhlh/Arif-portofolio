@@ -17,6 +17,7 @@ Every requested website update must be published to GitHub Pages after validatio
 - `dist/dashboard-data-modelling.html`: Adult Census Income project, embedded presentation, and full PDF download
 - `dist/pizza-sales-analysis.html`: pizza restaurant sales modelling, monthly revenue and order-timing storytelling, charts, and documented group attribution
 - `dist/pizza-dashboard.html`: interactive workbook dashboard with coordinated filters and question-led insights
+- `dist/kasivo-pos.html`: Kasivo POS design in progress, Product & Stock contribution, interview guides, UI evidence, sitemap, and project roadmap
 - `dist/research-method.html`: AI learning analytics acceptance research, a continuous scrollable presentation reader, and a source-backed project brief
 - `dist/data-information-management.html`: Solaria database design, course context, order/receipt mapping, and verified individual contribution
 - `dist/tableau-sales-performance.html`: retail sales preparation, Tableau dashboard, original report, and presentation
@@ -36,7 +37,7 @@ Every existing and future project follows **What → Why → Goal → My Role �
 
 ## Portfolio Interactions
 
-The homepage highlights eight course projects directly, with live project search, discipline filters, quick views, and tool icons at the bottom-right of every card. Each card opens its case study. The existing dark palette, lime accents, hero, About section, experience, technology highlights, contact details, and original CV are retained. StSport, Long-Life, Tableau, and pizza project pages include image galleries with navigation, zoom, and keyboard controls. The Data Modelling page retains its PDF reader and download links. These interactions run in the browser and remain compatible with GitHub Pages.
+The homepage highlights nine course projects directly, with live project search, discipline filters, quick views, and tool icons at the bottom-right of every card. Each card opens its case study. The existing dark palette, lime accents, hero, About section, experience, technology highlights, contact details, and original CV are retained. StSport, Long-Life, Tableau, and pizza project pages include image galleries with navigation, zoom, and keyboard controls. The Data Modelling page retains its PDF reader and download links. These interactions run in the browser and remain compatible with GitHub Pages.
 
 ## Vincraft Preview
 
@@ -55,3 +56,7 @@ Run `node --test tests/pizza-dashboard-model.test.cjs` to verify the numerical m
 ## Research Method presentation
 
 The Research Method case study uses the paper title, **Student Acceptance of AI-Driven Learning Analytics System**. Its original 13-page PDF is displayed in a continuous, keyboard-scrollable PDF.js reader with page navigation, zoom, page text, and open/download links. The concise explanation below the reader and homepage Quick View use the same eight-field brief. Arif’s individual contribution is attributed from the supplied manuscript; the brief avoids numerical hypothesis claims that differ between the manuscript and presentation. The original PDF is retained unchanged, including its final template slide.
+
+## Kasivo — Minor Project in Information Systems
+
+Kasivo is presented as work in progress for ISYS6899003 (7 September–21 December 2026). All POS interface designs were created in Figma. Arif’s confirmed contribution is the Product & Stock UI design. Other screens and the sitemap are attributed to the team. The page preserves all supplied design images and includes both original interview templates, with English question guides. Interview completion and dates are reported by the project team; the blank templates are not presented as interview responses. The roadmap extends to January 2027 for finalisation/submission and is distinguished from the course period. Screenshots illustrate proposed features, not a verified deployed POS or AI system.

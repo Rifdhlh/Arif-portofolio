@@ -1,0 +1,36 @@
+,,,,
+,First Step,,,
+,Fill this before the interview start!,,,
+,Nama Interviewer,,,
+,Name 🖋,,,
+,Phone 🤳,,,
+,Owner/Karyawan,,,
+,,,,
+,Second Step,,,
+,"Ini adalah list pertanyaan, klik bagian check jika sudah ditanyakan pertanyaannya, dan tulis jawaban mereka dibagian ""notes on answer""",,,
+,Block,Indonesia,Check, Notes on Answers
+,Pembukaan,"Boleh perkenalkan diri dulu? Dengan siapa saya berbicara, dan saat ini posisi Bapak/Ibu sebagai owner atau karyawan yang bekerja di sini?",FALSE,
+,,Boleh ceritakan proses bisnis Ibu/Bapak dari awal menyambut customer sampai customer membayar?,FALSE,
+,Histori & Pengalaman POS,"Apakah sebelumnya pernah pakai POS lain? Kalau iya, berapa aplikasi yang pernah dicoba?",FALSE,
+,,"Jika pernah pakai lebih dari satu / If used more than one
+Apa perbedaan yang dirasakan antara POS sebelumnya dengan yang sekarang, dan kira-kira kenapa bisa berbeda?
+",FALSE,
+,,"Selama pakai POS, ada bagian yang bikin Ibu/Bapak kesulitan atau bingung nggak?",FALSE,
+,,"Jika ""iya, kesulitan"" / If ""yes""
+Kesulitannya di mana persisnya, apakah ketika input pesanan, update stok, lihat laporan, atau proses lain? Apa yang menyebabkan itu terjadi?
+",FALSE,
+,,"Untuk harga POS-nya kisaran berapa, dan langganannya per bulan atau per tahun? Apakah perbedaan harga dengan POS yang pernah dipakai berbanding jauh? (kalau ada)",FALSE,
+,Masalah Operasional (basis fitur AI),Apakah Bapak/Ibu ada pertimbangan khusus terkait kelebihan stok?,FALSE,
+,,"Pernah nggak mengalami stok habis padahal masih ada pelanggan yang mau beli, atau sebaliknya stok kebanyakan sampai tidak terjual? Apa yang biasanya menyebabkan itu?",FALSE,
+,,Apakah ada cara evaluasi kalau lagi sepi dan kalau ramai?,FALSE,
+,,Keputusan apa yang menjadi pertimbangan sulit bagi Bapak/Ibu dalam mengambil keputusan?	,FALSE,
+,Validasi Kebutuhan Fitur AI,Menurut Bapak/Ibu ada fitur tambahan apa ya yang membantu kalau mengambil keputusan?,FALSE,
+,,"Menurut Bapak/Ibu apakah ada fitur tambahan yang mungkin bagus untuk ditambahkan?
+Jika owner bingung, beri contoh / If unsure, give examples: ""barang ini kemungkinan habis dalam beberapa hari"", ""besok kemungkinan ramai, siapkan stok lebih banyak"", ""produk ini sebaiknya dipromosikan minggu ini"". Lalu tanya: mana yang paling dibutuhkan untuk masalah tadi, dan kenapa? 
+",FALSE,
+,,"Menurut Ibu/Bapak, bagian usaha mana yang paling cocok kalau dibantu AI: prediksi penjualan, rekomendasi restock, rekomendasi promo, analisis produk laku/tidak, atau penentuan harga?",FALSE,
+,Kepercayaan terhadap Rekomendasi AI,"Kalau aplikasi kasih saran, Ibu/Bapak lebih suka yang dikasih tahu alasannya (pakai data) atau langsung saran singkat aja?",FALSE,
+,, Apa yang menjadi alasan Ibu/Bapak untuk tidak mempertimbangkan saran/alasan yang diberikan?,FALSE,
+,Penutup,"Apakah ada kritik dan saran terhadap POS ini, apakah ada yang mau dikembangkan atau dievaluasi?",FALSE,
+,,,,
+,Summary about them:,,,
