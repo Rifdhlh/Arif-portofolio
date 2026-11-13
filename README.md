@@ -60,3 +60,7 @@ The Research Method case study uses the paper title, **Student Acceptance of AI-
 ## Kasivo — Minor Project in Information Systems
 
 Kasivo is presented as work in progress for ISYS6899003 (7 September–21 December 2026). All POS interface designs were created in Figma. Arif’s confirmed contribution is the Product & Stock UI design. Other screens and the sitemap are attributed to the team. The page preserves all supplied design images and includes both original interview templates, with English question guides. Interview completion and dates are reported by the project team; the blank templates are not presented as interview responses. The roadmap extends to January 2027 for finalisation/submission and is distinguished from the course period. Screenshots illustrate proposed features, not a verified deployed POS or AI system.
+
+## SUMMITRA group signage
+
+The Publication and Documentation experience includes four original group signage designs created in Canva for the LDKKA HIMSISFO 2027: SUMMITRA pre-event. Davendra is visible initially; the native View More disclosure reveals Gautam, Ekawira, Baswara, and a separately labelled Canva process screenshot. The repeated Gautam attachment was omitted following the user’s clarification. Original images, full-size links, the existing header design, and the certificate design are retained. The supplied Canva tool icon appears at the bottom-right of this experience’s design work.
