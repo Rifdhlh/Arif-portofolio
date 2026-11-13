@@ -37,6 +37,8 @@ Every existing and future project follows **What → Why → Goal → My Role �
 
 ## Portfolio Interactions
 
+Navigation follows **About → My Works → Experience**. All project content appears before Experience, which is the final homepage content section immediately before the footer. The contact section remains available above Experience.
+
 The homepage presents Kasivo as a directly readable ongoing project before eight other course project cards. Its status, project brief, progress, design contribution, and UI previews are visible on the homepage. The other coursework retains live project search, discipline filters, quick views, and tool icons at the bottom-right of each card. Each card opens its case study. The existing dark palette, lime accents, hero, About section, experience, technology highlights, contact details, and original CV are retained. StSport, Long-Life, Tableau, and pizza project pages include image galleries with navigation, zoom, and keyboard controls. The Data Modelling page retains its PDF reader and download links. These interactions run in the browser and remain compatible with GitHub Pages.
 
 ## Vincraft Preview
