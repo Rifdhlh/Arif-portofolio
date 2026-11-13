@@ -1,0 +1,24 @@
+/* The constellation field stays behind the content and never intercepts input. */
+.portfolio-home .ambient-surface{position:relative;isolation:isolate;overflow:clip}
+.portfolio-home .ambient-surface>.wrap{position:relative;z-index:1}
+.portfolio-home .ambient-canvas{position:absolute;inset:0;z-index:0;display:block;width:100%;height:100%;max-width:none;pointer-events:none;opacity:.86}
+.portfolio-home .interactive-glow{position:relative}
+.portfolio-home .interactive-glow::after{content:"";position:absolute;inset:-1px;z-index:2;padding:1px;border-radius:inherit;background:radial-gradient(190px circle at var(--glow-x,50%) var(--glow-y,50%),#d5f66bc9,transparent 72%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;pointer-events:none;transition:opacity .24s ease}
+.portfolio-home .interactive-glow[data-glow-active="true"]::after{opacity:1}
+.portfolio-home .interactive-glow:focus-within{border-color:var(--accent)}
+.portfolio-home .course-project-action>span,.portfolio-home .current-project-footer>a>span,.portfolio-home .current-project-design a>span,.portfolio-home .experience-design figcaption a>span{display:inline-block;transition:transform .22s ease}
+@media(hover:hover) and (pointer:fine){
+ .portfolio-home .course-project>.card:hover .course-project-action>span,.portfolio-home .current-project-footer>a:hover>span,.portfolio-home .current-project-design a:hover>span,.portfolio-home .experience-design figcaption a:hover>span{transform:translate(3px,-2px)}
+}
+.portfolio-home .current-project-footer>a:focus-visible>span,.portfolio-home .current-project-design a:focus-visible>span,.portfolio-home .experience-design figcaption a:focus-visible>span{transform:translate(3px,-2px)}
+.portfolio-home .current-project-footer>.current-project-next:is(:hover,:focus-visible)>span{transform:translateY(3px)}
+html[data-motion="on"] .portfolio-home .current-project-status::before{animation:ambient-status-pulse 3.5s ease-in-out infinite}
+@keyframes ambient-status-pulse{0%,100%{box-shadow:0 0 0 0 #d5f66b00}50%{box-shadow:0 0 0 6px #d5f66b14}}
+html[data-motion="off"] .portfolio-home .interactive-glow::after{opacity:0}
+html[data-motion="off"] .portfolio-home :is(.course-project-action,.current-project-footer>a,.current-project-design a,.experience-design figcaption a)>span{transform:none!important}
+@media(max-width:700px){.portfolio-home .ambient-canvas{opacity:.62}}
+@media(prefers-reduced-motion:reduce){
+ .portfolio-home .interactive-glow::after{display:none}
+ .portfolio-home .course-project-action>span,.portfolio-home .current-project-footer>a>span,.portfolio-home .current-project-design a>span,.portfolio-home .experience-design figcaption a>span{transition:none;transform:none!important}
+ html[data-motion="on"] .portfolio-home .current-project-status::before{animation:none}
+}

@@ -209,44 +209,6 @@
         "href": "research-method.html"
       }
     ]
-  },
-  "kasivo": {
-    "title": "AI-Powered Point-of-Sale (POS) Application for Medium-Sized Businesses",
-    "keywords": "Kasivo AI POS point of sale Minor Project in Information Systems ISYS6899003 LD11 business MSME SME UMKM product inventory stock restock design sitemap wireframe owner cashier employee interview in progress September December 2026 Figma UI UX interface design",
-    "entries": [
-      {
-        "title": "AI-Powered Point-of-Sale (POS) Application for Medium-Sized Businesses",
-        "description": "Kasivo is an ongoing group project proposing a POS application with AI-assisted operations and business insights. My contribution is the Product & Stock interface design.",
-        "facts": [
-          [
-            "Product",
-            "Kasivo"
-          ],
-          [
-            "Course",
-            "Minor Project in Information Systems"
-          ],
-          [
-            "Course Code / Class",
-            "ISYS6899003 · LD11 – LEC"
-          ],
-          [
-            "Status",
-            "In Progress · 7 September–21 December 2026"
-          ],
-          [
-            "My Contribution",
-            "Product & Stock UI design"
-          ],
-          [
-            "Design Tool",
-            "Figma"
-          ]
-        ],
-        "href": "kasivo-pos.html",
-        "note": "Work in progress. This entry documents the team’s current research and UI designs. The application, AI features, and project documentation are still being developed."
-      }
-    ]
   }
 };
 

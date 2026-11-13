@@ -102,6 +102,40 @@ window.portfolioProjectBriefs = {
       "Group 8 delivered an OLTP ERD, a data dictionary, and SQL query exercises."
     ]
   ],
+  "index.html": [
+    [
+      "What",
+      "Kasivo is an in-progress AI-powered POS application concept for medium-sized businesses."
+    ],
+    [
+      "Why",
+      "Repetitive tasks, recording errors, inaccurate data, and limited synchronisation can complicate operations and business analysis."
+    ],
+    [
+      "Goal",
+      "The project aims to streamline daily work and support more informed business decisions."
+    ],
+    [
+      "My Role",
+      "I designed the Product & Stock interface in Figma, including stock monitoring and proposed AI-assisted replenishment guidance."
+    ],
+    [
+      "How",
+      "Our team conducted interviews and developed a sitemap and wireframes, with POS interface designs created in Figma."
+    ],
+    [
+      "Challenges",
+      "The design must connect staff workflows, reliable inventory information, and understandable recommendations for owners."
+    ],
+    [
+      "Target Users",
+      "Intended users are business owners and employees; customers are also considered in the proposed public access area."
+    ],
+    [
+      "Results",
+      "Current outputs include interview guides, a sitemap, and UI designs; the project and its documentation remain incomplete."
+    ]
+  ],
   "kasivo-pos.html": [
     [
       "What",
