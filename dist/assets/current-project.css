@@ -1,0 +1,43 @@
+/* The ongoing course project is directly readable before the project collection. */
+.current-project{background:var(--paper);border-top:1px solid var(--line);padding-block:78px 48px}
+.current-project-heading{display:flex;align-items:center;gap:20px;margin-bottom:36px}
+.current-project-heading .eyebrow{margin:0}
+.current-project-status{margin-left:auto;display:inline-flex;align-items:center;gap:9px;color:var(--accent);font:600 11px/1.6 var(--font-label);text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
+.current-project-status::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.current-project-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:start}
+.current-project-copy{min-width:0}
+.current-project-name{font:600 15px/1.5 var(--font-label);color:var(--accent);margin:0 0 17px;letter-spacing:.04em}
+.current-project h2#current-project-title{font-size:clamp(2rem,3.5vw,2.8rem);line-height:1.13;letter-spacing:-.035em;margin:0 0 23px;overflow-wrap:break-word}
+.current-project-lead{color:var(--muted);font-size:16px;line-height:1.85;margin:0 0 21px;max-width:600px}
+.current-project-note{font-size:13px;line-height:1.8;color:var(--muted);border-left:2px solid var(--accent);padding-left:16px;margin:0 0 26px}
+.current-project-note strong{color:var(--ink);font-weight:600}
+.current-project-facts{display:grid;grid-template-columns:1fr 1fr;gap:18px 24px;margin:0}
+.current-project-facts>div{min-width:0;padding-top:14px;border-top:1px solid var(--line)}
+.current-project-facts dt{color:var(--muted);font:10px/1.6 var(--font-label);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+.current-project-facts dd{font-size:13px;line-height:1.7;color:var(--ink);margin:0;overflow-wrap:anywhere}
+.current-project-design{min-width:0;margin:0}
+.current-project-design img{display:block;width:100%;height:auto;max-width:100%;background:#faf8f2}
+.current-project-design figcaption{padding-top:18px}
+.current-project-design figcaption>span{font:10px/1.6 var(--font-label);color:var(--accent);text-transform:uppercase;letter-spacing:.04em}
+.current-project-design h3{font-size:23px;line-height:1.3;margin:10px 0}
+.current-project-design p{font-size:13px;color:var(--muted);line-height:1.8;margin:0 0 12px}
+.current-project-design a{color:var(--accent);font-size:12px;font-weight:600;text-decoration:none;text-underline-offset:4px}
+.current-project-design a:hover{text-decoration:underline}
+.current-project .current-project-brief{padding:28px 0 18px;margin-top:36px;border-top:1px solid var(--line)}
+.current-project .current-project-brief>.wrap{padding:0;max-width:none}
+.current-project .current-project-brief h2{font-size:24px;margin:0 0 23px}
+.current-project-progress{display:grid;grid-template-columns:1fr 1fr;gap:32px;padding-block:24px;border-top:1px solid var(--line);margin:0}
+.current-project-progress>div{min-width:0}
+.current-project-progress dt{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:7px}
+.current-project-progress dd{font-size:13px;line-height:1.8;color:var(--muted);margin:0}
+.current-project-progress time{color:var(--accent)}
+.current-project-team{font-size:12px;line-height:1.9;color:var(--muted);margin:0;padding-bottom:22px}.current-project-team strong{color:var(--ink);font-weight:600}
+.current-project-footer{display:flex;align-items:center;flex-wrap:wrap;gap:16px 26px;padding-top:23px;border-top:1px solid var(--line)}
+.current-project-footer>a{font-size:13px;font-weight:600;color:var(--accent);text-decoration:none;text-underline-offset:4px}
+.current-project-footer>a:hover{text-decoration:underline}
+.current-project-footer .current-project-next{color:var(--muted);font-size:12px;font-weight:400}
+.current-project-tool{margin-left:auto;display:inline-flex;align-items:center;gap:10px;color:var(--muted);font-size:12px}
+.current-project-tool>span:first-child{display:inline-flex;align-items:center;justify-content:center;width:35px;height:35px;background:#f2f3ed;border-radius:5px;padding:5px}
+.current-project-tool img{display:block;width:25px;height:25px;object-fit:contain}
+@media(max-width:1000px){.current-project-intro{gap:30px}.current-project-facts{gap:16px}.current-project h2#current-project-title{font-size:clamp(1.9rem,4vw,2.6rem)}}
+@media(max-width:700px){.current-project{padding-block:50px 34px}.current-project-heading{gap:15px;flex-wrap:wrap;margin-bottom:27px}.current-project-heading .eyebrow{font-size:9px}.current-project-status{font-size:10px}.current-project-intro{grid-template-columns:1fr;gap:30px}.current-project h2#current-project-title{font-size:clamp(2rem,7.2vw,2.7rem)}.current-project-lead{font-size:15px}.current-project-facts{gap:16px 18px}.current-project-facts dd{font-size:12px}.current-project-design h3{font-size:22px}.current-project .current-project-brief{margin-top:30px;padding-top:25px}.current-project-progress{grid-template-columns:1fr;gap:24px}.current-project-footer{gap:17px 22px}.current-project-tool{margin-left:0}.current-project-footer .current-project-next{flex-basis:100%;order:3}}

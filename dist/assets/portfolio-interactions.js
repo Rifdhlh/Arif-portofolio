@@ -43,7 +43,7 @@
         revealObserver.unobserve(entry.target);
       });
     }, {threshold: .05});
-    document.querySelectorAll('.section-title, .about-copy, .experience-group, .project-collection, .collection-card, .feature-card, .pg-panel, .damod-focus').forEach(element => {
+    document.querySelectorAll('.section-title, .about-copy, .experience-group, .project-collection, .collection-card, .feature-card, .pg-panel, .damod-focus, .current-project-intro, .current-project-brief, .current-project-progress').forEach(element => {
       if (element.getBoundingClientRect().top > window.innerHeight) {
         element.classList.add('reveal-pending');
         revealObserver.observe(element);
