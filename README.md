@@ -39,7 +39,7 @@ Every existing and future project follows **What → Why → Goal → My Role �
 
 Navigation follows **About → My Works → Experience**. All project content appears before Experience, which is the final homepage content section immediately before the footer. The contact section remains available above Experience.
 
-The homepage presents Kasivo as a directly readable ongoing project before eight other course project cards. Its status, project brief, progress, design contribution, and UI previews are visible on the homepage. The other coursework retains live project search, discipline filters, quick views, and tool icons at the bottom-right of each card. Each card opens its case study. The existing dark palette, lime accents, hero, About section, experience, technology highlights, contact details, and original CV are retained. StSport, Long-Life, Tableau, and pizza project pages include image galleries with navigation, zoom, and keyboard controls. The Data Modelling page retains its PDF reader and download links. These interactions run in the browser and remain compatible with GitHub Pages.
+The homepage presents Kasivo as a directly readable ongoing project before eight other course project cards. Its status, project brief, progress, design contribution, and UI previews are visible on the homepage. The other coursework retains live project search, discipline filters, quick views, and tool icons at the bottom-right of each card. Each card opens its case study. The existing dark palette, lime accents, hero, About section, experience, technology highlights, contact details, and the latest supplied CV are retained. StSport, Long-Life, Tableau, and pizza project pages include image galleries with navigation, zoom, and keyboard controls. The Data Modelling page retains its PDF reader and download links. These interactions run in the browser and remain compatible with GitHub Pages.
 
 ## Vincraft Preview
 
@@ -70,3 +70,7 @@ The Publication and Documentation experience includes four original group signag
 ## Interactive homepage background
 
 The homepage uses theme-matched constellation backgrounds in the hero, current-project, and contact sections, with pointer response and subtle hover feedback. The existing Pause Animations preference and operating-system reduced-motion setting control the effects. Background rendering pauses when surfaces are offscreen or the document is hidden. Existing content, imagery, search, and keyboard access remain available independently of the decorative layer.
+
+## CV download
+
+The Download CV button uses the one-page CV supplied on 16 November 2026. The original uploaded PDF bytes are preserved, the page-count label matches the file, and the download link is versioned so visitors receive the updated document.
