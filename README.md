@@ -73,4 +73,4 @@ The homepage uses theme-matched constellation backgrounds in the hero, current-p
 
 ## CV download
 
-The Download CV button uses the one-page CV supplied on 16 November 2026. The original uploaded PDF bytes are preserved, the page-count label matches the file, and the download link is versioned so visitors receive the updated document.
+The Download CV button uses the two-page CV supplied on 21 November 2026. The original uploaded PDF bytes are preserved, the page-count label matches the file, and the download link is versioned so visitors receive the updated document.
